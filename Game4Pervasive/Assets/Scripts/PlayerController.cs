@@ -13,7 +13,9 @@ public class PlayerMovement : MonoBehaviour
 
     public InputActionReference move;
     public InputActionReference talk;
+    public InputActionReference interact;
     private NPC currentNPC;
+    private Item currentItem;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +26,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (DialogueManager.Instance.isDialogueActive)
+        {
+            return;
+        }
+
+        if (talk.action.triggered && currentNPC != null)
+        {
+            currentNPC.Interact();
+        }
+
+        if (interact.action.triggered && currentItem != null)
+        {
+            currentItem.Collect();
+            currentItem = null;
+        }
+
         RaycastHit hit;
         Vector3 castPos = transform.position;
         castPos.y += 1;
@@ -49,11 +67,6 @@ public class PlayerMovement : MonoBehaviour
         {
             sr.flipX = false;
         }
-
-        if (talk.action.triggered && currentNPC != null)
-        {
-            currentNPC.Interact();
-        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -63,14 +76,26 @@ public class PlayerMovement : MonoBehaviour
             currentNPC = other.GetComponent<NPC>();
             currentNPC.PlayerNearby();
         }
+
+        if (other.CompareTag("Item"))
+        {
+            currentItem = other.GetComponent<Item>();
+            currentItem.PlayerNearby();
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == currentNPC.gameObject)
+        if (currentNPC != null && other.gameObject == currentNPC.gameObject)
         {
             currentNPC.PlayerAway();
             currentNPC = null;
+        }
+
+        if (currentItem != null && other.gameObject == currentItem.gameObject)
+        {
+            currentItem.PlayerAway();
+            currentItem = null;
         }
     }
 }

@@ -1,23 +1,23 @@
-// Singleton: Inventory.cs
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
-    private HashSet<string> items = new();
+    private HashSet<ItemData> items = new();
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
     }
 
-    public void AddItem(string item)
+    public void AddItem(ItemData item)
     {
         items.Add(item);
+        DialogueManager.Instance.FindItem(item);
     }
 
-    public bool HasItem(string item)
+    public bool HasItem(ItemData item)
     {
         return items.Contains(item);
     }

@@ -2,11 +2,13 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
+    public Image image;
     public float textSpeed;
 
     private int index;
@@ -15,7 +17,7 @@ public class Dialogue : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartDialogue();
+
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class Dialogue : MonoBehaviour
     }
 
     public void StartDialogue()
-    {
+    {   
         index = 0;
         textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
@@ -61,6 +63,8 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            DialogueManager.Instance.isDialogueActive = false;
+            lines = null;
             gameObject.SetActive(false);
         }
     }

@@ -72,7 +72,7 @@
                     "name": "Next",
                     "type": "Button",
                     "id": "adeb0113-08a5-47f1-9de9-8f05bbc892fb",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -82,15 +82,6 @@
                     "type": "Button",
                     "id": "64c7ddf4-75fb-41a1-bd63-4c3e319861c8",
                     "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Click",
-                    "type": "Button",
-                    "id": "feafdf61-1360-423d-91c7-5d2240058e17",
-                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -331,7 +322,7 @@
                 {
                     "name": "",
                     "id": "15cd3440-aafa-415f-b5b4-e5e9032b939e",
-                    "path": "<Keyboard>/2",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -346,6 +337,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ca930829-0153-4adf-9d40-18c5d2998b81",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Next",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -479,17 +481,6 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b41231ed-ba82-4897-abe6-bae634f818e3",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
