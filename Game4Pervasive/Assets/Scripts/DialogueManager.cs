@@ -15,7 +15,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialogue.gameObject.SetActive(true);
         dialogue.lines = character.unlockedInteractions;
-        dialogue.image.sprite = character.portrait;
+        dialogue.titleImage.gameObject.SetActive(true);
+        dialogue.titleText.text = character.characterName;
         isDialogueActive = true;
         dialogue.StartDialogue();
     }
@@ -24,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogue.gameObject.SetActive(true);
         dialogue.lines = new[] { "You found " + item.itemName + "!\n" + item.description };
-        dialogue.image.sprite = item.image;
+        dialogue.titleImage.gameObject.SetActive(false);
         isDialogueActive = true;
         dialogue.StartDialogue();
     }

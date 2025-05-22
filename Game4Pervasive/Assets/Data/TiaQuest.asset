@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4017f97c66151d459e1dca1f84a55fb, type: 3}
+  m_Name: TiaQuest
+  m_EditorClassIdentifier: 
+  questTitle: 
+  description: 
+  targetCharacter: {fileID: 11400000, guid: 5be8b66aa08627c4bb66469099ba98ea, type: 2}
+  requiredItems: []
+  optionalDialogueInfo: []
+  requiresExtraDetails: 0

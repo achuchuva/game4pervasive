@@ -8,8 +8,9 @@ public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public string[] lines;
-    public Image image;
     public float textSpeed;
+    public Image titleImage;
+    public TextMeshProUGUI titleText;
 
     private int index;
     public InputActionReference nextLine;

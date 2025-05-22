@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6602d07840096df41aae0eeec3c8d38d, type: 3}
-  m_Name: Slimer
+  m_Name: Tia
   m_EditorClassIdentifier: 
-  characterName: Slimer
-  portrait: {fileID: 21300000, guid: 15dc4eb01dbeea343b3b8dfcdeb10bb6, type: 3}
+  characterName: Tia
+  portrait: {fileID: 21300000, guid: e0aab8ef7a3e2664c9a41888a276b862, type: 3}
   backstory: He is slimer, the one who slimes
   approvalPoints: 0
   maxApprovalPoints: 10
   unlockableDecorations: []
   unlockedInteractions:
-  - Heyyyy I'm Slimer!
+  - Heyyyy I'm Tia!
   - So, uhh, you new in town?
   - You can tell I don't know how to write sample dialogue right?
   - ...
