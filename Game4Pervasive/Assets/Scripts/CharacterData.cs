@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CharacterData", menuName = "RPG/CharacterData")]
 public class CharacterData : ScriptableObject
 {
+    [System.Serializable]
     public struct DialogueTree
     {
         public string optionName;
@@ -10,10 +11,10 @@ public class CharacterData : ScriptableObject
         public DialogueTree[] branches;
     }
 
+    [System.Serializable]
     public struct Conversation
     {
         public DialogueTree[] dialogueTrees;
-        public DialogueTree initialDialogueTree;
     }
 
     public string characterName;
@@ -22,6 +23,8 @@ public class CharacterData : ScriptableObject
     public int approvalPoints;
     public int maxApprovalPoints = 10;
 
+    public Conversation[] conversations;
     public GameObject[] unlockableDecorations;
     public string[] unlockedInteractions;
+
 }

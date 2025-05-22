@@ -17,6 +17,20 @@ MonoBehaviour:
   backstory: He is slimer, the one who slimes
   approvalPoints: 0
   maxApprovalPoints: 10
+  conversations:
+  - dialogueTrees:
+    - optionName: Initial Conversation
+      lines:
+      - You must be the new resident. Well met, stranger. Just as a flame needs fresh
+        kindling, a little town like this can always use more good folk.
+      - 'I am Tia. Some call me the Great Firedrake. Mostly it is I who calls myself
+        this. I come from the mountains. '
+      - Like you, I have not been in Pebblewick long. Let us make new lives here
+        together, hm? At the edge of the world.
+      branches:
+      - optionName: 
+        lines: []
+        branches: []
   unlockableDecorations: []
   unlockedInteractions:
   - Heyyyy I'm Tia!

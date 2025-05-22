@@ -12,13 +12,16 @@ public class Dialogue : MonoBehaviour
     public Image titleImage;
     public TextMeshProUGUI titleText;
 
+    public GameObject options;
+    public Selectable option;
+
     private int index;
     public InputActionReference nextLine;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -42,6 +45,7 @@ public class Dialogue : MonoBehaviour
     {   
         index = 0;
         textComponent.text = string.Empty;
+        options.SetActive(false);
         StartCoroutine(TypeLine());
     }
 
@@ -64,9 +68,17 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            DialogueManager.Instance.isDialogueActive = false;
-            lines = null;
-            gameObject.SetActive(false);
+            if (option != null)
+            {
+                options.SetActive(true);
+                option.Select();
+            }
+            else
+            {
+                DialogueManager.Instance.isDialogueActive = false;
+                lines = null;
+                gameObject.SetActive(false);
+            }
         }
     }
 }

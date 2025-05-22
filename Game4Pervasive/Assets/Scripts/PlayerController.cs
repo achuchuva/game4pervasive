@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDir = new Vector3(moveInput.x, 0, moveInput.y);
         rb.linearVelocity = moveDir * speed;
 
+
         if (moveInput.x != 0 && moveInput.x < 0)
         {
             sr.flipX = true;
