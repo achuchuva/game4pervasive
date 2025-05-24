@@ -121,11 +121,6 @@ public class Dialogue : MonoBehaviour
         options.SetActive(false);
     }
 
-    public void StartConversation(Conversation conversation)
-    {
-
-    }
-
     public void StartDialogue(DialogueNode dialogueRootNode)
     {
         // clear options

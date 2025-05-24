@@ -42,7 +42,21 @@ public class DialogueManager : MonoBehaviour
         // TODO kinda hacky
         int ITEM_CONVERSATION_ID = 999;
 
-        DialogueNode tree = new DialogueNode(ITEM_CONVERSATION_ID, "Item Found", new string[] { "You found a " + item.itemName }, null);
+        // no branches
+        DialogueNode[] branches = new DialogueNode[0];
+
+        // text
+        string[] lines = new string[2];
+
+        // name
+        // if plural use "some" otherwise use "a"
+        lines[0] = (item.isPlural ? "You found some " : "You found a ") + item.itemName;
+
+        // description
+        lines[1] = item.description;
+
+
+        DialogueNode tree = new DialogueNode(ITEM_CONVERSATION_ID, "Item Found", lines, branches);
 
         dialogue.StartDialogue(tree);
     }

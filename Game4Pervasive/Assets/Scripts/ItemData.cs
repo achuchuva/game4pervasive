@@ -6,4 +6,6 @@ public class ItemData : ScriptableObject
     public string itemName;
     public Sprite image;
     public string description;
+
+    public bool isPlural;
 }
