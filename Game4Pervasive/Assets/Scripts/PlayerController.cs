@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (DialogueManager.Instance.isDialogueActive)
         {
+            // stop movement
+            rb.linearVelocity = Vector3.zero;
             return;
         }
 

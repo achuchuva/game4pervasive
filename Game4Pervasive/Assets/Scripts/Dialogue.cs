@@ -103,15 +103,6 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    public void EndDialogue()
-    {
-        index = 0;
-        DialogueManager.Instance.isDialogueActive = false;
-        lines = null;
-        gameObject.SetActive(false);
-        options.SetActive(false);
-    }
-
     public void EndConversation()
     {
         index = 0;
@@ -123,6 +114,8 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue(DialogueNode dialogueRootNode)
     {
+        DialogueManager.Instance.isDialogueActive = true;
+
         // clear options
         ClearOptions();
 
