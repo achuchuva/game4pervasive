@@ -15,3 +15,4 @@ MonoBehaviour:
   itemName: Kindling
   image: {fileID: 21300000, guid: 794aa25d484d140d89ea9601c122ece0, type: 3}
   description: 
+  isPlural: 1

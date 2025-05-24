@@ -45,16 +45,21 @@ public class DialogueManager : MonoBehaviour
         // no branches
         DialogueNode[] branches = new DialogueNode[0];
 
+        // number of lines
+        int numLines = string.IsNullOrEmpty(item.description) ? 1 : 2;
+
         // text
-        string[] lines = new string[2];
+        string[] lines = new string[numLines];
 
         // name
         // if plural use "some" otherwise use "a"
         lines[0] = (item.isPlural ? "You found some " : "You found a ") + item.itemName;
 
-        // description
-        lines[1] = item.description;
-
+        // don't show if description is empty
+        if (numLines > 1)
+        {
+            lines[1] = item.description;
+        }
 
         DialogueNode tree = new DialogueNode(ITEM_CONVERSATION_ID, "Item Found", lines, branches);
 
