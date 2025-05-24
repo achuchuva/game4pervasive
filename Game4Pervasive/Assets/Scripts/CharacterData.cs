@@ -7,6 +7,7 @@ public class DialogueNode
     public int dialogueNodeId;
     public string optionName;
     public string[] lines;
+
     public DialogueNode[] branches;
 
     // constructor

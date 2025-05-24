@@ -18,8 +18,7 @@
             "dialogueNodeId": 1,
             "optionName": "Be polite",
             "lines": [
-              "Ok bye bye",
-              "Kk"
+              "Ok bye bye"
             ],
             "branches": []
           },
