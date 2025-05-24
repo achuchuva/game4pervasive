@@ -1,30 +1,48 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CharacterData", menuName = "RPG/CharacterData")]
-public class CharacterData : ScriptableObject
+
+[System.Serializable]
+public class DialogueNode
 {
-    [System.Serializable]
-    public struct DialogueTree
+    public int dialogueNodeId;
+    public string optionName;
+    public string[] lines;
+    public DialogueNode[] branches;
+
+    // constructor
+    public DialogueNode(int id, string name, string[] lines, DialogueNode[] branches)
     {
-        public string optionName;
-        public string[] lines;
-        public DialogueTree[] branches;
+        dialogueNodeId = id;
+        optionName = name;
+        this.lines = lines;
+        this.branches = branches;
     }
-
-    [System.Serializable]
-    public struct Conversation
-    {
-        public DialogueTree[] dialogueTrees;
-    }
-
-    public string characterName;
-    public Sprite portrait;
-    public string backstory;
-    public int approvalPoints;
-    public int maxApprovalPoints = 10;
-
-    public Conversation[] conversations;
-    public GameObject[] unlockableDecorations;
-    public string[] unlockedInteractions;
-
 }
+
+[System.Serializable]
+public class Conversation
+{
+    public int conversationId;
+    public string conversationName;
+    public DialogueNode conversationTree;
+
+    // constructor
+    public Conversation(int id, string name, DialogueNode tree)
+    {
+        conversationId = id;
+        conversationName = name;
+        conversationTree = tree;
+    }
+}
+
+
+[System.Serializable]
+public class CharacterDataObj
+{
+    public string characterName;
+    public int approvalPoints;
+    public int maxApprovalPoints;
+    public Conversation[] conversations;
+}
+
+

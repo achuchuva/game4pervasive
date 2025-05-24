@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static QuestData;
 
 public class QuestManager : MonoBehaviour
 {
@@ -20,21 +21,18 @@ public class QuestManager : MonoBehaviour
     public void CompleteQuest(QuestData quest, bool metExtraDetails)
     {
         activeQuests.Remove(quest);
-        if (!metExtraDetails && quest.requiresExtraDetails) return;
+        if (!metExtraDetails) return;
 
-        var charData = quest.targetCharacter;
+        var charData = quest.questGiver;
         if (charData.approvalPoints < charData.maxApprovalPoints)
         {
             charData.approvalPoints++;
-            UnlockContent(charData);
+            UnlockContent(quest.rewards);
         }
     }
 
-    private void UnlockContent(CharacterData charData)
+    private void UnlockContent(Reward[] rewards)
     {
-        foreach (var item in charData.unlockableDecorations)
-            item.SetActive(true); // or Instantiate it somewhere
-
-        // Handle unlocked interactions similarly
+        // TODO
     }
 }

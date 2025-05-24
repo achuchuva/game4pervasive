@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questTitle: 
   description: 
-  targetCharacter: {fileID: 11400000, guid: 5be8b66aa08627c4bb66469099ba98ea, type: 2}
-  requiredItems: []
-  optionalDialogueInfo: []
-  requiresExtraDetails: 0
+  questId: 0
+  questGiver:
+    characterName: 
+    portraitPath: 
+    approvalPoints: 0
+    maxApprovalPoints: 0
+    conversations: []
+  questSequence: []
+  rewards: []

@@ -1,0 +1,38 @@
+{
+  "characterName": "Tia",
+  "approvalPoints": 3,
+  "maxApprovalPoints": 10,
+  "conversations": [
+    {
+      "conversationId": 1,
+      "conversationName": "First Encounter",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Tia",
+        "lines": [
+          "Who dares enter my cave?",
+          "Oh… a traveler? You don’t look like much."
+        ],
+        "branches": [
+          {
+            "dialogueNodeId": 1,
+            "optionName": "Be polite",
+            "lines": [
+              "Ok bye bye",
+              "Kk"
+            ],
+            "branches": []
+          },
+          {
+            "dialogueNodeId": 2,
+            "optionName": "Boast",
+            "lines": [
+              "*eats you*"
+            ],
+            "branches": []
+          }
+        ]
+      }
+    }
+  ]
+}

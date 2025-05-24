@@ -1,9 +1,17 @@
 using UnityEngine;
 
 public class NPC : MonoBehaviour
+
 {
-    public CharacterData characterData;
+    public CharacterLoader characterLoader;
+    public string characterFileName;
     public GameObject interactionPrompt;
+    private CharacterDataObj characterData;
+
+    private void Start()
+    {
+        characterData = characterLoader.LoadCharacter(characterFileName);
+    }
 
     void Update()
     {
