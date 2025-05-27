@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0677c10262dc63e409ab1a6ac6db6eaa, type: 3}
+  m_Name: TiaTOF
+  m_EditorClassIdentifier: 
+  characterName: Tia
+  doubts:
+  - doubtId: 0
+    doubtText: "In the mountains, there was Shen\u2026 He understood me. Since coming
+      here, I find myself speaking to the wind, hoping it will answer. Tell me\u2014how
+      can I ever trust again?"
+    options:
+    - optionId: 0
+      option: Trust in me.
+      itemsRequired: []
+    - optionId: 1
+      option: Trust in yourself.
+      itemsRequired: []
+    - optionId: 2
+      option: Trust in Shen.
+      itemsRequired: []
+    correctOptionId: 2
+    doubtSuccessResponse: "Yes\u2026 Shen always carried my flame with care. Perhaps
+      someone else can, too "
+    doubtFailureResponse: No... I need to place my trust elsewhere.
+  - doubtId: 1
+    doubtText: "I remember his voice\u2014gentle, like embers. He spoke of funny
+      little things under starlight. I cling to what I can recall. But I fear I may
+      lose those memories for good\u2026"
+    options:
+    - optionId: 0
+      option: Speak them aloud until they return.
+      itemsRequired: []
+    - optionId: 1
+      option: Remember the sky-flames.
+      itemsRequired: []
+    - optionId: 2
+      option: Let go and move forward.
+      itemsRequired: []
+    correctOptionId: 1
+    doubtSuccessResponse: "Sky-flames\u2026 You listened. That means more than you
+      know."
+    doubtFailureResponse: I'm not sure if this'll work.
+  - doubtId: 2
+    doubtText: "There is a rite I must complete\u2014one I\u2019ve delayed for too
+      long. It involves fire\u2026 and farewell. But when I try to act, fear roots
+      me in place. What if I cannot finish what I started?"
+    options:
+    - optionId: 0
+      option: "You don\u2019t have to finish it alone."
+      itemsRequired: []
+    - optionId: 1
+      option: Then wait until you're ready.
+      itemsRequired: []
+    - optionId: 2
+      option: Walk away from it.
+      itemsRequired: []
+    correctOptionId: 0
+    doubtSuccessResponse: "You would do that? Even without knowing what it is. Thank
+      you\u2026 Truly."
+    doubtFailureResponse: I fear for what I need to do...
