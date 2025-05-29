@@ -1366,7 +1366,6 @@ GameObject:
   m_Component:
   - component: {fileID: 607915051}
   - component: {fileID: 607915052}
-  - component: {fileID: 607915053}
   m_Layer: 5
   m_Name: Quests
   m_TagString: Untagged
@@ -1419,22 +1418,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &607915053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607915050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15867d0c9cd072439c1cf8d995516f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeQuests: []
-  selectedQuestIndex: 0
-  questPrefab: {fileID: 7077643049086798107, guid: f2258a3dd7e2c421b84df954e99a11ae, type: 3}
-  questBook: {fileID: 478484983}
 --- !u!1 &641331608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,6 +2358,7 @@ GameObject:
   - component: {fileID: 1272426196}
   - component: {fileID: 1272426198}
   - component: {fileID: 1272426199}
+  - component: {fileID: 1272426200}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2500,7 +2484,24 @@ MonoBehaviour:
   talk: {fileID: 4595533771749835860, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   interact: {fileID: 4595533771749835860, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   showQuestBookAction: {fileID: 5846941237706116274, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
-  questManager: {fileID: 607915053}
+  questManager: {fileID: 1272426200}
+--- !u!114 &1272426200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272426194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15867d0c9cd072439c1cf8d995516f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeQuests: []
+  selectedQuestIndex: 0
+  questPrefab: {fileID: 7077643049086798107, guid: f2258a3dd7e2c421b84df954e99a11ae, type: 3}
+  questBook: {fileID: 478484983}
+  questListContainer: {fileID: 607915051}
 --- !u!1 &1384604523
 GameObject:
   m_ObjectHideFlags: 0

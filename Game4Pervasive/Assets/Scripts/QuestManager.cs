@@ -17,6 +17,8 @@ public class QuestManager : MonoBehaviour
 
     public GameObject questBook;
 
+    public Transform questListContainer;
+
 
     public void Start()
     {
@@ -51,7 +53,7 @@ public class QuestManager : MonoBehaviour
     public void ClearQuestPrefabs()
     {
         // clear all quest prefabs
-        foreach (Transform child in transform)
+        foreach (Transform child in questListContainer)
         {
             Destroy(child.gameObject);
         }
@@ -62,7 +64,7 @@ public class QuestManager : MonoBehaviour
     {
         foreach (QuestData quest in activeQuests)
         {
-            GameObject newQuest = Instantiate(questPrefab, transform);
+            GameObject newQuest = Instantiate(questPrefab, questListContainer);
             Button questButton = newQuest.GetComponent<Button>();
             TextMeshProUGUI buttonText = questButton.GetComponentInChildren<TextMeshProUGUI>();
             buttonText.text = quest.questTitle;
@@ -77,14 +79,17 @@ public class QuestManager : MonoBehaviour
         ClearQuestPrefabs();
         CreateQuestPrefabs();
 
-        // get options container
-        Transform optionsContainer = gameObject.transform;
 
-        if (optionsContainer.childCount > 0)
+        if (questListContainer.childCount > 0)
         {
             Debug.Log("Setting first button as selected");
-            var firstButton = optionsContainer.GetChild(0).GetComponent<Button>();
+            var firstButton = questListContainer.GetChild(0).GetComponent<Button>();
+
+            Debug.Log($"First button: {firstButton.name}");
             UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(firstButton.gameObject);
+
+            // select the first quest
+            selectedQuestIndex = 0;
         }
     }
 
