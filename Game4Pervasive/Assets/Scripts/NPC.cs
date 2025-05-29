@@ -19,6 +19,7 @@ public class NPC : MonoBehaviour
     private Vector3 targetPosition;
     private float idleTimer = 0f;
     private bool playerNearby = false;
+    public float xPos = 0.3f; // Position offset for interaction prompt
 
     private void Start()
     {
@@ -95,6 +96,9 @@ public class NPC : MonoBehaviour
     public void PlayerNearby()
     {
         playerNearby = true;
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        interactionPrompt.GetComponent<SpriteRenderer>().flipX = direction.x > 0;
+        interactionPrompt.transform.localPosition = new Vector3(direction.x < 0 ? -xPos : xPos, interactionPrompt.transform.localPosition.y, interactionPrompt.transform.localPosition.z);
         interactionPrompt.SetActive(true);
         rb.linearVelocity = Vector3.zero;
     }

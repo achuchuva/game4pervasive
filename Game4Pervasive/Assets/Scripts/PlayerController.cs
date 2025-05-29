@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     private NPC currentNPC;
     private Item currentItem;
+    public Animator animator;
 
 
 
@@ -76,6 +77,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Vector2 moveInput = move.action.ReadValue<Vector2>();
+        if (moveInput == Vector2.zero)
+        {
+            animator.SetBool("Walk", false);
+        }
+        else
+        {
+            animator.SetBool("Walk", true);
+        }
+
         Vector3 moveDir = new Vector3(moveInput.x, 0, moveInput.y);
         rb.linearVelocity = moveDir * speed;
 
