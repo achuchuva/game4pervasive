@@ -14,8 +14,14 @@ public class PlayerMovement : MonoBehaviour
     public InputActionReference move;
     public InputActionReference talk;
     public InputActionReference interact;
+    public InputActionReference showQuestBookAction;
+
+    public QuestManager questManager;
+
     private NPC currentNPC;
     private Item currentItem;
+
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,6 +37,18 @@ public class PlayerMovement : MonoBehaviour
             // stop movement
             rb.linearVelocity = Vector3.zero;
             return;
+        }
+
+        if (showQuestBookAction.action.triggered)
+        {
+            if (questManager.questBook.activeSelf)
+            {
+                questManager.HideQuestBook();
+            }
+            else
+            {
+                questManager.ShowQuestBook();
+            }
         }
 
         if (talk.action.triggered && currentNPC != null)

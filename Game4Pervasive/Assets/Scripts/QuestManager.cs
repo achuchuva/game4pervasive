@@ -3,6 +3,7 @@ using UnityEngine;
 using static QuestData;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class QuestManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class QuestManager : MonoBehaviour
     public GameObject questPrefab;
 
     public GameObject questBook;
+
 
     public void Start()
     {
@@ -44,6 +46,8 @@ public class QuestManager : MonoBehaviour
         ShowQuestBook();
     }
 
+
+
     public void ClearQuestPrefabs()
     {
         // clear all quest prefabs
@@ -68,6 +72,7 @@ public class QuestManager : MonoBehaviour
 
     public void ShowQuestBook()
     {
+        Debug.Log("Showing quest book");
         questBook.SetActive(true);
         ClearQuestPrefabs();
         CreateQuestPrefabs();
@@ -77,6 +82,7 @@ public class QuestManager : MonoBehaviour
 
         if (optionsContainer.childCount > 0)
         {
+            Debug.Log("Setting first button as selected");
             var firstButton = optionsContainer.GetChild(0).GetComponent<Button>();
             UnityEngine.EventSystems.EventSystem.current.SetSelectedGameObject(firstButton.gameObject);
         }
@@ -84,6 +90,7 @@ public class QuestManager : MonoBehaviour
 
     public void HideQuestBook()
     {
+        Debug.Log("Hiding quest book");
         questBook.SetActive(false);
     }
 

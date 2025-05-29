@@ -935,7 +935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &478484984
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2499,6 +2499,8 @@ MonoBehaviour:
   move: {fileID: 7400601182290671629, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   talk: {fileID: 4595533771749835860, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   interact: {fileID: 4595533771749835860, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
+  showQuestBookAction: {fileID: 5846941237706116274, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
+  questManager: {fileID: 607915053}
 --- !u!1 &1384604523
 GameObject:
   m_ObjectHideFlags: 0
