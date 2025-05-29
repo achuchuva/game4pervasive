@@ -84,8 +84,17 @@ public class NPC : MonoBehaviour
 
     private void PickNewDestination()
     {
-        Vector2 randomCircle = Random.insideUnitCircle * walkRadius;
-        targetPosition = originalPosition + new Vector3(randomCircle.x, 0, randomCircle.y);
+        Vector2 randomCircle;
+        Vector3 potentialTarget;
+
+        do
+        {
+            randomCircle = Random.insideUnitCircle * walkRadius;
+            potentialTarget = originalPosition + new Vector3(randomCircle.x, 0, randomCircle.y);
+        } 
+        while (potentialTarget.x < 13 || potentialTarget.x > 89 || potentialTarget.z < 5 || potentialTarget.z > 36);
+
+        targetPosition = potentialTarget;
     }
 
     public void Interact()

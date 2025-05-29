@@ -22,6 +22,16 @@ public class PlayerMovement : MonoBehaviour
     private Item currentItem;
     public Animator animator;
 
+    public GameObject rainEffect;
+    public GameObject snowEffect;
+    public GameObject lightningEffect;
+    public GameObject fogEffect;
+
+    public InputActionReference rain;
+    public InputActionReference snow;
+    public InputActionReference lightning;
+    public InputActionReference fog;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -97,6 +107,25 @@ public class PlayerMovement : MonoBehaviour
         else if (moveInput.x != 0 && moveInput.x > 0)
         {
             sr.flipX = false;
+        }
+
+
+        // Weather effects
+        if (rain.action.triggered)
+        {
+            rainEffect.SetActive(!rainEffect.activeSelf);
+        }
+        if (snow.action.triggered)
+        {
+            snowEffect.SetActive(!snowEffect.activeSelf);
+        }
+        if (lightning.action.triggered)
+        {
+            lightningEffect.SetActive(!lightningEffect.activeSelf);
+        }
+        if (fog.action.triggered)
+        {
+            fogEffect.SetActive(!fogEffect.activeSelf);
         }
     }
 
