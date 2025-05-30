@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         // initialize the inventory
-        InitInv();
+        // InitInv();
     }
 
     // TODO remove this - this is temp for testing purposes
