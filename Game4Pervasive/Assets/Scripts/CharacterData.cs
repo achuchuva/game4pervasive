@@ -40,6 +40,7 @@ public class Conversation
 [System.Serializable]
 public class CharacterDataObj
 {
+    public int characterId;
     public string characterName;
     public int approvalPoints;
     public int maxApprovalPoints;

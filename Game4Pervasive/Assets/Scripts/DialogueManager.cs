@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
@@ -29,6 +30,30 @@ public class DialogueManager : MonoBehaviour
         dialogue.titleText.text = character.characterName;
         isDialogueActive = true;
         dialogue.StartDialogue(currentConversation.conversationTree);
+
+        // grant quest if they have it
+        if (character.availableQuests != null && character.availableQuests.Length > 0)
+        {
+            Debug.Log("Character has available quests, granting the first one.");
+
+            // convert to list
+            List<QuestData> questList = new List<QuestData>(character.availableQuests);
+
+            // print all quests
+            foreach (QuestData quest in questList)
+            {
+                Debug.Log("Available quest: " + quest.questTitle);
+            }
+
+            QuestData quest2 = character.availableQuests[0];
+
+            Debug.Log("Granting quest: " + quest2.questTitle);
+
+            QuestManager.Instance.activeQuests.Add(quest2);
+
+            // remove quest from npc
+            character.availableQuests = new QuestData[0];
+        }
     }
 
     public void FindItem(ItemData item)

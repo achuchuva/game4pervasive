@@ -1,9 +1,39 @@
 {
+  "characterId": 1,
   "characterName": "Tia",
   "approvalPoints": 3,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
-  "availableQuests": [],
+  "availableQuests": [
+    {
+      "questTitle": "Retrieve the Ancient Artifact",
+      "description": "Find the lost artifact in the Forgotten Caves and return it to the village elder.",
+      "questId": 1,
+      "questGiver": {
+        "name": "Tia",
+        "characterId": 1
+      },
+      "questSequence": [
+        {
+          "questNodeId": 1
+        },
+        {
+          "questNodeId": 2
+        },
+        {
+          "questNodeId": 3
+        }
+      ],
+      "rewards": [
+        {
+          "rewardId": 201
+        },
+        {
+          "rewardId": 301
+        }
+      ]
+    }
+  ],
   "conversations": [
     {
       "conversationId": 1,
