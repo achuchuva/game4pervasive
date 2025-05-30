@@ -43,6 +43,8 @@ public class CharacterDataObj
     public string characterName;
     public int approvalPoints;
     public int maxApprovalPoints;
+    public bool readyForTOF;
+    public QuestData[] availableQuests;
     public Conversation[] conversations;
 }
 

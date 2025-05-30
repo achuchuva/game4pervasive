@@ -2,6 +2,8 @@
   "characterName": "Tia",
   "approvalPoints": 3,
   "maxApprovalPoints": 10,
+  "readyForTOF": false,
+  "availableQuests": [],
   "conversations": [
     {
       "conversationId": 1,
