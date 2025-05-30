@@ -4488,7 +4488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  bubble: {fileID: 0}
+  bubble: {fileID: 671356385}
   walkSpeed: 0.5
   walkRadius: 12
   idleTime: 6
@@ -7657,7 +7657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  bubble: {fileID: 0}
+  bubble: {fileID: 1991577599}
   walkSpeed: 0.5
   walkRadius: 8
   idleTime: 9
@@ -11105,7 +11105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  bubble: {fileID: 0}
+  bubble: {fileID: 1974700661}
   walkSpeed: 0.5
   walkRadius: 8
   idleTime: 9
@@ -11681,7 +11681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  bubble: {fileID: 0}
+  bubble: {fileID: 726402610}
   walkSpeed: 0.5
   walkRadius: 8
   idleTime: 9
