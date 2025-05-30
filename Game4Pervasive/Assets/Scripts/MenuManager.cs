@@ -42,6 +42,9 @@ public class MenuManager : MonoBehaviour
     // inventory manager
     public InventoryManager inventoryManager;
 
+    // character manager
+    public CharMenuManager characterManager;
+
 
     void Start()
     {
@@ -93,6 +96,7 @@ public class MenuManager : MonoBehaviour
                 break;
             case MenuType.Characters:
                 characterMenu.SetActive(true);
+                characterManager.ShowCharacterMenu();
                 break;
             case MenuType.Quests:
                 questMenu.SetActive(true);
