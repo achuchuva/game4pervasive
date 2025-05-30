@@ -20,6 +20,8 @@ public class QuestManager : MonoBehaviour
 
     public Transform questListContainer;
 
+    private QuestData currentQuest;
+
     public void Start()
     {
         // for testing we add some quests
@@ -44,6 +46,9 @@ public class QuestManager : MonoBehaviour
 
         activeQuests.Add(quest2);
 
+        // set the first quest as current
+        currentQuest = activeQuests.Count > 0 ? activeQuests[0] : null;
+
         // update quest text
         UpdateCurrentQuest();
     }
@@ -65,6 +70,10 @@ public class QuestManager : MonoBehaviour
         {
             GameObject newQuest = Instantiate(questPrefab, questListContainer);
             Button questButton = newQuest.GetComponent<Button>();
+
+            // add listener to the button
+            questButton.onClick.AddListener(() => SetCurrentQuest(quest));
+
             TextMeshProUGUI buttonText = questButton.GetComponentInChildren<TextMeshProUGUI>();
             buttonText.text = quest.questTitle;
         }
@@ -81,18 +90,19 @@ public class QuestManager : MonoBehaviour
         // update quest book
         ShowQuestBook();
 
+        // get the first quest of the list
+        currentQuest = activeQuests.Count > 0 ? activeQuests[0] : null;
+
         // update quest text
         UpdateCurrentQuest();
     }
 
     public void UpdateCurrentQuest()
     {
-        // get the first quest of the list
-        QuestData firstQuest = activeQuests.Count > 0 ? activeQuests[0] : null;
-        if (firstQuest != null)
+        if (currentQuest != null)
         {
             questHolder.SetActive(true);
-            SetCurrentQuestText(firstQuest);
+            SetCurrentQuestText(currentQuest);
         }
         else
         {
@@ -104,6 +114,12 @@ public class QuestManager : MonoBehaviour
     {
         ClearQuestPrefabs();
         CreateQuestPrefabs();
+    }
+
+    public void SetCurrentQuest(QuestData quest)
+    {
+        currentQuest = quest;
+        UpdateCurrentQuest();
     }
 
     public void SetCurrentQuestText(QuestData quest)
