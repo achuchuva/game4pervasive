@@ -14,9 +14,9 @@ public class PlayerMovement : MonoBehaviour
     public InputActionReference move;
     public InputActionReference talk;
     public InputActionReference interact;
-    public InputActionReference showQuestBookAction;
+    public InputActionReference showMenuAction;
 
-    public QuestManager questManager;
+    public MenuManager menuManager;
 
     private NPC currentNPC;
     private Item currentItem;
@@ -50,15 +50,15 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (showQuestBookAction.action.triggered)
+        if (showMenuAction.action.triggered)
         {
-            if (questManager.questBook.activeSelf)
+            if (menuManager.menu.activeSelf)
             {
-                questManager.HideQuestBook();
+                menuManager.HideMainMenu();
             }
             else
             {
-                questManager.ShowQuestBook();
+                menuManager.ShowMainMenu();
             }
         }
 

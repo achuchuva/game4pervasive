@@ -4285,7 +4285,7 @@ GameObject:
   - component: {fileID: 1272426196}
   - component: {fileID: 1272426198}
   - component: {fileID: 1272426199}
-  - component: {fileID: 1272426200}
+  - component: {fileID: 1272426201}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4415,8 +4415,8 @@ MonoBehaviour:
   move: {fileID: 7400601182290671629, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   talk: {fileID: 4595533771749835860, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   interact: {fileID: 4595533771749835860, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
-  showQuestBookAction: {fileID: 5846941237706116274, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
-  questManager: {fileID: 1272426200}
+  showMenuAction: {fileID: 5846941237706116274, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
+  menuManager: {fileID: 1272426201}
   animator: {fileID: 485294040}
   rainEffect: {fileID: 304540841}
   snowEffect: {fileID: 1451318549}
@@ -4426,7 +4426,7 @@ MonoBehaviour:
   snow: {fileID: -3515147937711819575, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   lightning: {fileID: 7168767872354811668, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
   fog: {fileID: -5588129780516687384, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
---- !u!114 &1272426200
+--- !u!114 &1272426201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4435,14 +4435,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1272426194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15867d0c9cd072439c1cf8d995516f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fac9e443ad0c41f5bb47453d360aed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeQuests: []
-  selectedQuestIndex: 0
-  questPrefab: {fileID: 7077643049086798107, guid: f2258a3dd7e2c421b84df954e99a11ae, type: 3}
-  questBook: {fileID: 478484983}
-  questListContainer: {fileID: 607915051}
+  menu: {fileID: 976088257}
+  inventoryMenu: {fileID: 244308121}
+  characterMenu: {fileID: 1707698519}
+  questMenu: {fileID: 371590297}
+  inventoryButton: {fileID: 2111693351}
+  characterButton: {fileID: 2014251456}
+  questButton: {fileID: 164933692}
 --- !u!1 &1384604523
 GameObject:
   m_ObjectHideFlags: 0
