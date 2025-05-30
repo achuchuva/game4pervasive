@@ -129,4 +129,9 @@ public class NPC : MonoBehaviour
         Debug.Log("Getting approval points for character: " + characterData.characterName);
         return characterData.approvalPoints;
     }
+
+    public CharacterDataObj GetCharacterData()
+    {
+        return characterData;
+    }
 }
