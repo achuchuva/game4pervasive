@@ -9,6 +9,12 @@ public class QuestManager : MonoBehaviour
     public static QuestManager Instance;
     public List<QuestData> activeQuests = new();
 
+
+    // quest obj
+    public GameObject questHolder;
+    // quest text obj
+    public TextMeshProUGUI questText;
+
     // quest prefab
     public GameObject questPrefab;
 
@@ -37,8 +43,10 @@ public class QuestManager : MonoBehaviour
         };
 
         activeQuests.Add(quest2);
-    }
 
+        // update quest text
+        UpdateCurrentQuest();
+    }
 
 
     public void ClearQuestPrefabs()
@@ -62,12 +70,46 @@ public class QuestManager : MonoBehaviour
         }
     }
 
+    public void CompletedQuest(QuestData quest)
+    {
+        // remove quest from active quests
+        activeQuests.Remove(quest);
+
+        // unlock content based on rewards
+        UnlockContent(quest.rewards);
+
+        // update quest book
+        ShowQuestBook();
+
+        // update quest text
+        UpdateCurrentQuest();
+    }
+
+    public void UpdateCurrentQuest()
+    {
+        // get the first quest of the list
+        QuestData firstQuest = activeQuests.Count > 0 ? activeQuests[0] : null;
+        if (firstQuest != null)
+        {
+            questHolder.SetActive(true);
+            SetCurrentQuestText(firstQuest);
+        }
+        else
+        {
+            questHolder.SetActive(false);
+        }
+    }
+
     public void ShowQuestBook()
     {
         ClearQuestPrefabs();
         CreateQuestPrefabs();
     }
 
+    public void SetCurrentQuestText(QuestData quest)
+    {
+        questText.text = quest.questTitle;
+    }
 
     private void UnlockContent(Reward[] rewards)
     {
