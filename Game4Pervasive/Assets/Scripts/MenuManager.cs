@@ -36,6 +36,9 @@ public class MenuManager : MonoBehaviour
     // last selected button
     private Button lastSelectedButton;
 
+    // quest manager
+    public QuestManager questManager;
+
 
     void Start()
     {
@@ -78,7 +81,6 @@ public class MenuManager : MonoBehaviour
         characterMenu.SetActive(false);
         questMenu.SetActive(false);
 
-
         // show the selected menu
         switch (menuType)
         {
@@ -90,6 +92,7 @@ public class MenuManager : MonoBehaviour
                 break;
             case MenuType.Quests:
                 questMenu.SetActive(true);
+                questManager.ShowQuestBook();
                 break;
         }
     }
