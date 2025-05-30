@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5495628324549340256}
   - component: {fileID: 2166485771717367794}
   - component: {fileID: 3572486302414585580}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 7350978282306759346}
   - component: {fileID: 7215926152385533200}
   - component: {fileID: 7476204748139131435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

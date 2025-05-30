@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3195915462748179366}
   - component: {fileID: 3492846181013118188}
   - component: {fileID: 958486100206145030}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tree3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,8 @@ GameObject:
   - component: {fileID: 2192295922128290249}
   - component: {fileID: 5456746387334096250}
   - component: {fileID: 7254172668949158414}
-  m_Layer: 0
+  - component: {fileID: 5810136883858124937}
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,6 +212,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &5810136883858124937
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7273871676645850051}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.63
+  m_Center: {x: 0, y: 0, z: -0.0000009536743}
 --- !u!1 &9159103202699450923
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +244,7 @@ GameObject:
   - component: {fileID: 153687155916670899}
   - component: {fileID: 5517838338510019904}
   - component: {fileID: 8995612614944989109}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}

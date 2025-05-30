@@ -7,7 +7,7 @@ public class LightingManager : MonoBehaviour
     public float RotationSpeed = 1f; // Speed of rotation in degrees per second
     public LightingPreset Preset;
     [SerializeField, Range(0, 24)]
-    [HideInInspector] public float TimeOfDay; // 0 to 24, where 0 is midnight and 24 is the next midnight
+    public float TimeOfDay; // 0 to 24, where 0 is midnight and 24 is the next midnight
 
     private void Update()
     {

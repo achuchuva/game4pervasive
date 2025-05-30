@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 144588161055128094}
   - component: {fileID: 3335431089480051683}
   - component: {fileID: 775947344733056030}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ice Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5712397411615319702}
   - component: {fileID: 4382294080060949533}
   - component: {fileID: 3202096901039830180}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
