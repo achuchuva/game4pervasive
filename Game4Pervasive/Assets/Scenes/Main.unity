@@ -3525,7 +3525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  interactionPrompt: {fileID: 1047654337}
+  bubble: {fileID: 1047654340}
   walkSpeed: 0.5
   walkRadius: 10
   idleTime: 8
@@ -3928,7 +3928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  interactionPrompt: {fileID: 1096999913}
+  bubble: {fileID: 0}
   walkSpeed: 0.5
   walkRadius: 12
   idleTime: 6
@@ -5019,6 +5019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1047654338}
   - component: {fileID: 1047654339}
+  - component: {fileID: 1047654340}
   m_Layer: 0
   m_Name: Bubble
   m_TagString: Untagged
@@ -5098,6 +5099,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1047654340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047654337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f70b0fc525643adae38d4df57bf576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubble: {fileID: 1047654337}
+  npc: {fileID: 710272648}
+  heart: {fileID: 1875479921}
+  questIcon: {fileID: 1327763282}
 --- !u!1 &1078275889
 GameObject:
   m_ObjectHideFlags: 0
@@ -7014,7 +7031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
   characterFileName: tia.json
-  interactionPrompt: {fileID: 892751257}
+  bubble: {fileID: 0}
   walkSpeed: 0.5
   walkRadius: 8
   idleTime: 9

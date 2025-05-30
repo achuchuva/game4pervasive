@@ -4,7 +4,7 @@ public class NPC : MonoBehaviour
 {
     public CharacterLoader characterLoader;
     public string characterFileName;
-    public GameObject interactionPrompt;
+    public Bubble bubble;
     public float walkSpeed = 2f;
     public float walkRadius = 5f;
     public float idleTime = 2f;
@@ -42,7 +42,7 @@ public class NPC : MonoBehaviour
 
         if (DialogueManager.Instance.isDialogueActive)
         {
-            interactionPrompt.SetActive(false);
+            bubble.HideBubble();
         }
 
         // Terrain alignment (same as player logic)
@@ -106,16 +106,22 @@ public class NPC : MonoBehaviour
     {
         playerNearby = true;
         Vector3 direction = (targetPosition - transform.position).normalized;
+
+        // get interaction prompt
+        GameObject interactionPrompt = bubble.bubble;
+
         interactionPrompt.GetComponent<SpriteRenderer>().flipX = direction.x > 0;
         interactionPrompt.transform.localPosition = new Vector3(direction.x < 0 ? -xPos : xPos, interactionPrompt.transform.localPosition.y, interactionPrompt.transform.localPosition.z);
-        interactionPrompt.SetActive(true);
+
+        bubble.ShowBubble();
+
         rb.linearVelocity = Vector3.zero;
     }
 
     public void PlayerAway()
     {
         playerNearby = false;
-        interactionPrompt.SetActive(false);
+        bubble.HideBubble();
     }
 
     private void OnDrawGizmosSelected()

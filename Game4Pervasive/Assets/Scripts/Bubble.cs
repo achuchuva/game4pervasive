@@ -3,6 +3,8 @@ using UnityEngine;
 public class Bubble : MonoBehaviour
 {
 
+    public GameObject bubble;
+
     public NPC npc;
     public GameObject heart;
     public GameObject questIcon;
@@ -22,6 +24,18 @@ public class Bubble : MonoBehaviour
         // hide both icons
         heart.SetActive(false);
         questIcon.SetActive(false);
+    }
+
+    public void ShowBubble()
+    {
+        bubble.SetActive(true);
+        ShowIconsBasedOnData();
+    }
+
+    public void HideBubble()
+    {
+        bubble.SetActive(false);
+        HideIcons();
     }
 
     public void ShowIconsBasedOnData()
@@ -46,5 +60,11 @@ public class Bubble : MonoBehaviour
                 ShowQuest();
             }
         }
+    }
+
+    // get sprite renderer
+    public SpriteRenderer GetSpriteRenderer()
+    {
+        return bubble.GetComponent<SpriteRenderer>();
     }
 }
