@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,6 +61,13 @@ public class PlayerMovement : MonoBehaviour
             {
                 menuManager.ShowMainMenu();
             }
+        }
+
+        // if we are in menu don't move
+        if (menuManager.menu.activeSelf)
+        {
+            rb.linearVelocity = Vector3.zero;
+            return;
         }
 
         if (talk.action.triggered && currentNPC != null)

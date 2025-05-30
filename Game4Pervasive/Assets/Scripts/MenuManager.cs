@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
@@ -24,10 +25,16 @@ public class MenuManager : MonoBehaviour
     public GameObject characterMenu;
     public GameObject questMenu;
 
+    // nav parent
+    public GameObject navParent;
+
     // buttons
     public Button inventoryButton;
     public Button characterButton;
     public Button questButton;
+
+    // last selected button
+    private Button lastSelectedButton;
 
 
     void Start()
@@ -38,7 +45,16 @@ public class MenuManager : MonoBehaviour
 
     void Update()
     {
+        var current = EventSystem.current.currentSelectedGameObject;
 
+        Button button = current.GetComponent<Button>();
+
+        if (current != null && button != null && button != lastSelectedButton)
+        {
+
+            button.onClick.Invoke();
+            lastSelectedButton = button;
+        }
     }
 
     void SetUpOnClickListeners()
@@ -85,6 +101,9 @@ public class MenuManager : MonoBehaviour
 
         // show inventory menu by default
         ShowSubMenu(MenuType.Inventory);
+
+        // set initial selected button for UI navigation
+        EventSystem.current.SetSelectedGameObject(inventoryButton.gameObject);
     }
 
     // sub menu functions for on clicks
