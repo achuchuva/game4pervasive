@@ -61,7 +61,7 @@ public class MenuManager : MonoBehaviour
 
         Button button = current.GetComponent<Button>();
 
-        if (current != null && button != null && button != lastSelectedButton)
+        if (current != null && button != null && button != lastSelectedButton && menu.activeSelf)
         {
 
             button.onClick.Invoke();
