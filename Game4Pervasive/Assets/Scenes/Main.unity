@@ -6130,7 +6130,7 @@ MonoBehaviour:
   inventoryButton: {fileID: 2111693351}
   characterButton: {fileID: 2014251456}
   questButton: {fileID: 164933692}
-  questManager: {fileID: 0}
+  questManager: {fileID: 1167658337}
   inventoryManager: {fileID: 244308125}
   characterManager: {fileID: 1707698523}
 --- !u!1 &1305560597
