@@ -39,6 +39,26 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        // initialize the inventory
+        InitInv();
+    }
+
+    // TODO remove this - this is temp for testing purposes
+    private void InitInv()
+    {
+        // get all objects with item tags
+        GameObject[] items = GameObject.FindGameObjectsWithTag("Item");
+
+        // loop through all items and add them to the inventory
+        foreach (GameObject item in items)
+        {
+            Item itemComponent = item.GetComponent<Item>();
+            if (itemComponent != null)
+            {
+                Inventory.Instance.AddItem(itemComponent.itemData);
+            }
+        }
     }
 
     // Update is called once per frame

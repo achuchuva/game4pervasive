@@ -25,4 +25,10 @@ public class Inventory : MonoBehaviour
     {
         return items.Contains(item);
     }
+
+    // get all items
+    public List<ItemData> GetAllItems()
+    {
+        return new List<ItemData>(items);
+    }
 }
