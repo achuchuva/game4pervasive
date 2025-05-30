@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
@@ -24,19 +25,28 @@ public class MenuManager : MonoBehaviour
     public GameObject questMenu;
 
     // buttons
-    public Selectable inventoryButton;
-    public Selectable characterButton;
-    public Selectable questButton;
+    public Button inventoryButton;
+    public Button characterButton;
+    public Button questButton;
 
 
     void Start()
     {
         HideMainMenu();
+        SetUpOnClickListeners();
     }
 
     void Update()
     {
 
+    }
+
+    void SetUpOnClickListeners()
+    {
+        // set up on click listeners for buttons
+        inventoryButton.onClick.AddListener(OnInventoryButtonClicked);
+        characterButton.onClick.AddListener(OnCharacterButtonClicked);
+        questButton.onClick.AddListener(OnQuestButtonClicked);
     }
 
     void ShowSubMenu(MenuType menuType)
