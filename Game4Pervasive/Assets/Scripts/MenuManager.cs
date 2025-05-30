@@ -47,6 +47,12 @@ public class MenuManager : MonoBehaviour
     {
         var current = EventSystem.current.currentSelectedGameObject;
 
+        if (current == null)
+        {
+            // if no button is selected, return
+            return;
+        }
+
         Button button = current.GetComponent<Button>();
 
         if (current != null && button != null && button != lastSelectedButton)
