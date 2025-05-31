@@ -1,7 +1,7 @@
 {
   "characterId": 3,
   "characterName": "Alastair",
-  "approvalPoints": 0,
+  "approvalPoints": 1,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
   "availableQuests": ["Restore the Sparkle"],

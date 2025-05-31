@@ -27,6 +27,9 @@ public class TOFManager : MonoBehaviour
     public GameObject optionButtonPrefab;
     public GameObject heartContainer;
     public GameObject heartPrefab;
+    public GameObject correctPrefab;
+    public GameObject incorrectPrefab;
+    public GameObject spawner;
 
     private int currentDoubtIndex = 0;
     private int approvalRating = 3;
@@ -151,11 +154,21 @@ public class TOFManager : MonoBehaviour
         string response;
         if (selectedOptionId == doubt.correctOptionId)
         {
+            // Correct option selected
+            var correctGO = Instantiate(correctPrefab);
+            correctGO.transform.SetParent(spawner.transform);
+            // Set position to spawner's position
+            correctGO.transform.localPosition = Vector3.zero;
             response = doubt.doubtSuccessResponse;
             approvalRating = Mathf.Min(10, approvalRating + 1);
         }
         else
         {
+            // Incorrect option selected
+            var incorrectGO = Instantiate(incorrectPrefab);
+            incorrectGO.transform.SetParent(spawner.transform);
+            // Set position to spawner's position
+            incorrectGO.transform.localPosition = Vector3.zero;
             response = doubt.doubtFailureResponse;
             approvalRating = Mathf.Max(1, approvalRating - 1);
         }

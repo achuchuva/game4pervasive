@@ -1,7 +1,7 @@
 {
   "characterId": 5,
   "characterName": "Filbert",
-  "approvalPoints": 0,
+  "approvalPoints": 1,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
   "availableQuests": ["Squirrel of Suspicion"],

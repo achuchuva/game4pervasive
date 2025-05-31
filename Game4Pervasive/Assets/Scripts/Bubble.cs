@@ -48,6 +48,7 @@ public class Bubble : MonoBehaviour
         // if ready for TOF show heart
         if (characterData.readyForTOF)
         {
+            Debug.Log("Showing heart for character: " + characterData.characterName);
             ShowHeart();
         }
         else

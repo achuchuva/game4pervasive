@@ -4856,8 +4856,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
-  m_fontSizeBase: 48
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5071,7 +5071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 671356383}
-  npc: {fileID: 710272648}
+  npc: {fileID: 819883953}
   heart: {fileID: 1305560597}
   questIcon: {fileID: 685904184}
 --- !u!212 &671356386
@@ -5278,7 +5278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Goblin
+  m_text: Pippa
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
   m_sharedMaterial: {fileID: 3317225984504593934, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
@@ -5765,7 +5765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 726402608}
-  npc: {fileID: 710272648}
+  npc: {fileID: 7824699115289580171}
   heart: {fileID: 1701174321}
   questIcon: {fileID: 451994582}
 --- !u!212 &726402611
@@ -6218,7 +6218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
-  characterFileName: tia.json
+  characterFileName: clay.json
   bubble: {fileID: 671356385}
   walkSpeed: 0.5
   walkRadius: 12
@@ -10833,7 +10833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
-  characterFileName: tia.json
+  characterFileName: alastair.json
   bubble: {fileID: 1991577599}
   walkSpeed: 0.5
   walkRadius: 8
@@ -12632,7 +12632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1845447528}
   m_Layer: 5
-  m_Name: Golem
+  m_Name: Filbert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12777,7 +12777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Golem
+  m_text: Filbert
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
   m_sharedMaterial: {fileID: 3317225984504593934, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
@@ -13587,7 +13587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 1974700659}
-  npc: {fileID: 710272648}
+  npc: {fileID: 4426902012367109532}
   heart: {fileID: 1542528903}
   questIcon: {fileID: 840144410}
 --- !u!212 &1974700662
@@ -13808,6 +13808,7 @@ MonoBehaviour:
   option: {fileID: 0}
   optionPrefab: {fileID: 3788153603523959319, guid: e31cd4004985bcf4089973f12f481c91, type: 3}
   nextLine: {fileID: 6373453862137521366, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
+  TOFCharacter: 
   currentNode:
     dialogueNodeId: 0
     optionName: 
@@ -13891,7 +13892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubble: {fileID: 1991577597}
-  npc: {fileID: 710272648}
+  npc: {fileID: 1622171631}
   heart: {fileID: 39762941}
   questIcon: {fileID: 444059558}
 --- !u!212 &1991577600
@@ -14360,7 +14361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2054160491}
   m_Layer: 5
-  m_Name: Goblin
+  m_Name: Pippa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15889,7 +15890,7 @@ GameObject:
   - component: {fileID: 2641020065769396107}
   - component: {fileID: 7137291054962615722}
   m_Layer: 0
-  m_Name: Goblin
+  m_Name: Pippa
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17180,7 +17181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
-  characterFileName: tia.json
+  characterFileName: pippa.json
   bubble: {fileID: 1974700661}
   walkSpeed: 0.5
   walkRadius: 8
@@ -17432,7 +17433,7 @@ GameObject:
   - component: {fileID: 556003084817145141}
   - component: {fileID: 5312608857322601823}
   m_Layer: 0
-  m_Name: Golem
+  m_Name: Filbert
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19127,7 +19128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
-  characterFileName: tia.json
+  characterFileName: filbert.json
   bubble: {fileID: 726402610}
   walkSpeed: 0.5
   walkRadius: 8

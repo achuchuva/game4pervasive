@@ -1,7 +1,7 @@
 {
   "characterId": 4,
   "characterName": "Pippa",
-  "approvalPoints": 0,
+  "approvalPoints": 2,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
   "availableQuests": ["Mend the Brew"],

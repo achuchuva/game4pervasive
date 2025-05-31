@@ -1,7 +1,7 @@
 {
   "characterId": 2,
   "characterName": "Clay",
-  "approvalPoints": 0,
+  "approvalPoints": 3,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
   "availableQuests": ["Garden Restoration"],
@@ -13,7 +13,9 @@
         "dialogueNodeId": 0,
         "optionName": "Meet Clay",
         "lines": [
-          "Ah… your footsteps are unknown to this soil. Welcome, outsider. I am Clay, caretaker of all life here in Pebblewick. Long have I tended to these lands, before even the gardens withered. May you find something here worth nurturing."
+          "Ah… your footsteps are unknown to this soil. Welcome, outsider.",
+          "I am Clay, caretaker of all life here in Pebblewick. Long have I tended to these lands, before even the gardens withered.",
+          "May you find something here worth nurturing."
         ],
         "branches": []
       }

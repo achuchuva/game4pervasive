@@ -1,7 +1,7 @@
 {
   "characterId": 6,
   "characterName": "Liss",
-  "approvalPoints": 0,
+  "approvalPoints": 2,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
   "availableQuests": ["What Sparks Her Fancy"],

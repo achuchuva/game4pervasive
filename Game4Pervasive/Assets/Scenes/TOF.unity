@@ -1782,6 +1782,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9a0836c1c3eb1438be2f51930e40b5, type: 3}
+--- !u!1 &1494017868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1494017869}
+  m_Layer: 0
+  m_Name: Thing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1494017869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494017868}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 49.990498, y: 0.85, z: 4.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1592469921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2809,6 +2840,9 @@ MonoBehaviour:
   optionButtonPrefab: {fileID: 2471015988939087975, guid: a7c97ee481847774882347b3a2715f50, type: 3}
   heartContainer: {fileID: 13493739}
   heartPrefab: {fileID: 6562104615893881317, guid: 33bf65f8d5dcac34fbf0bd8562272350, type: 3}
+  correctPrefab: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55, type: 3}
+  incorrectPrefab: {fileID: 6855314210357232287, guid: 7c2a9b83b809a0848915fabd9596b68b, type: 3}
+  spawner: {fileID: 1494017868}
   next: {fileID: 6373453862137521366, guid: d267e0b509280e04cb6f3331729fa934, type: 3}
 --- !u!1 &1913648979
 GameObject:
@@ -3192,3 +3226,4 @@ SceneRoots:
   - {fileID: 1920863498}
   - {fileID: 881929648}
   - {fileID: 1299569232}
+  - {fileID: 1494017869}
