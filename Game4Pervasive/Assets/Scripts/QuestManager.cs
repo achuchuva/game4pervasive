@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour
         QuestData quest1 = new QuestData
         {
             questId = 1,
-            questTitle = "Find the Lost Cat",
+            questTitle = "Befriend Tia",
             description = "Help the villagers find their lost cat.",
             rewards = new Reward[] { }
         };
@@ -39,7 +39,7 @@ public class QuestManager : MonoBehaviour
         QuestData quest2 = new QuestData
         {
             questId = 2,
-            questTitle = "Collect Herbs",
+            questTitle = "Befriend Filbert",
             description = "Gather herbs from the forest for the healer.",
             rewards = new Reward[] { }
         };

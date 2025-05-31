@@ -1,103 +1,126 @@
 {
-  "characterId": 2,
-  "characterName": "Clay",
-  "approvalPoints": 3,
+  "characterId": 5,
+  "characterName": "Filbert",
+  "approvalPoints": 1,
   "maxApprovalPoints": 10,
-  "readyForTOF": false,
-  "availableQuests": ["Garden Restoration"],
+  "readyForTOF": true,
+  "availableQuests": [],
   "conversations": [
     {
       "conversationId": 1,
       "conversationName": "Introduction",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Meet Clay",
+        "optionName": "Meet Filbert",
         "lines": [
-          "Ah… your footsteps are unknown to this soil. Welcome, outsider.",
-          "I am Clay, caretaker of all life here in Pebblewick. Long have I tended to these lands, before even the gardens withered.",
-          "May you find something here worth nurturing."
+          "Halt! Come no closer. You carry a… vibe. Yes… a strange, flickering vibe.",
+          "Or perhaps that’s just your natural musk. Baha!",
+          "I am Filbert—wizard of the woods, master of mysteries, beater of demons.",
+          "Speaking of which—have you seen a squirrel with eyes like forgotten runes? If you do… run."
+        ],
+        "branches": [{
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the Squirrel",
+        "lines": [
+          "Do not be fooled. That thing is no squirrel. I fear it is something much, much worse.",
+          "A demon—that’s my best hypothesis. A creature from the days of old. Dark and clandestine.",
+          "It merely wants you to think it’s a squirrel. But we are not so easily fooled, are we?",
+          "I hear it lurks near Clay, the stone fellow. Of course it would. The beast feeds on calmness. And moss.",
+          "Now, I know we just met stranger, but I need… No—Pebblewick needs you.",
+          "Find this squirrel. Retrieve it for me. I must study it. Very carefully. From a distance. Through a jar."
         ],
         "branches": []
+      }]
       }
     },
     {
       "conversationId": 2,
-      "conversationName": "Quest Incomplete Greeting",
+      "conversationName": "Squirrel Dialogue",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Greet Clay Again",
+        "optionName": "Ask about the Squirrel",
         "lines": [
-          "You’ve come. Good. Silence can be its own conversation, but to hear a voice again is always appreciated."
+          "Do not be fooled. That thing is no squirrel. I fear it is something much, much worse.",
+          "A demon—that’s my best hypothesis. A creature from the days of old. Dark and clandestine.",
+          "It merely wants you to think it’s a squirrel. But we are not so easily fooled, are we?",
+          "I hear it lurks near Clay, the stone fellow. Of course it would. The beast feeds on calmness. And moss.",
+          "Now, I know we just met stranger, but I need… No—Pebblewick needs you.",
+          "Find this squirrel. Retrieve it for me. I must study it. Very carefully. From a distance. Through a jar."
         ],
         "branches": []
       }
     },
     {
       "conversationId": 3,
-      "conversationName": "Garden Dialogue",
+      "conversationName": "Wizard Dialogue",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Ask about the Gardens",
+        "optionName": "Ask about being a Wizard",
         "lines": [
-          "There was a time when gardens bloomed in every corner of Pebblewick. The townsfolk would gather, sharing seeds and stories.",
-          "The gardens are gone now—replaced by roofs, fences, homes. But one garden remains. Overgrown, derelict. The earth beneath it still hums with memory.",
-          "I wish to nurture it back to health, but do not know how. The garden pulses with magic and alchemy—things unknown to me.",
-          "Please, if you can, learn more of this garden. Help me to understand what pains it."
+          "I discovered magic when I was very young. I was trying to toast a crumpet.",
+          "Next thing I knew, the flames had leapt up like great, molten claws and seared my poor crumpet to a crisp!",
+          "That was my first ever spell, and it was entirely accidental.",
+          "Who knew that one coincidentally recite ancient words when singing gibberish…",
+          "After that, I couldn’t not study magic. The symbols, the swirls, the ancient frog chants… Oh, the frog chants!",
+          "So, eventually, I left my dank little cave and undertook an epic journey across the lands!",
+          "That led me here, but I never forget my roots.",
+          "Magic has always been with me. Like a rash. Or a curse. Or a very precious scarf."
         ],
         "branches": []
       }
     },
     {
       "conversationId": 4,
-      "conversationName": "Soil Dialogue",
+      "conversationName": "Pebblewick Dialogue",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Ask about Soil",
+        "optionName": "Ask about Pebblewick",
         "lines": [
-          "Soil is not just dirt. It is memory. Every fallen leaf, every footstep pressed into mud—it all becomes part of the story.",
-          "When I press my hand to the ground, I can feel those stories ripple through me.",
-          "Most are oblivious to it… but I hear lullabies in loam. Warnings in wilted petals. Joy in the rise of green things.",
-          "The world speaks—all one must do is listen."
+          "Ah, Pebblewick. I chose this town completely at random, you know.",
+          "It was a Tuesday. I came upon a humble village. The smell of the moss was pleasant.",
+          "At first, I thought I’d hate staying in one place. But there’s something… peaceful here.",
+          "There’s nothing to interrupt my studies. It’s grown on me, this place. Like fungus."
         ],
         "branches": []
       }
     },
     {
       "conversationId": 5,
-      "conversationName": "Pebblewick Dialogue",
+      "conversationName": "Quest Incomplete Greeting",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Ask about Pebblewick",
+        "optionName": "Greet Filbert Again",
         "lines": [
-          "I have wandered these hills longer than Pebblewick has had a name.",
-          "Before stone turned to chimney and the ground was paved, I tended roots and made quiet friends of rabbits.",
-          "The people came later, but I stayed. I watched the town grow, settle, change.",
-          "Sometimes I miss the wild it once was… but I do not resent the change. All things shift, and still, the earth holds steady beneath it all."
+          "Ah! You return.",
+          "I smell… something. Determination? Or is that toast?",
+          "No matter. Have you questions?"
         ],
         "branches": []
       }
     },
     {
       "conversationId": 6,
-      "conversationName": "Post-Garden Pixie",
+      "conversationName": "Returned with Squirrel",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Report on Garden Pixie",
+        "optionName": "Give him the squirrel",
         "lines": [
-          "Something feels… lighter. Whatever you did, you have soothed the earth here.",
-          "Now, the garden can flourish once again. Thank you, friend.",
-          "I only hope that I can do the same…"
+          "AAH! By the gods, you captured it!",
+          "To be frank, I doubted you would succeed.",
+          "‘Suicide mission’ probably isn’t the right term, but… Bah! Never mind that.",
+          "Now I just need to find a suitable jar, and then the studies can begin!"
         ],
         "branches": [
           {
             "dialogueNodeId": 1,
-            "optionName": "What's wrong?",
+            "optionName": "It’s just a squirrel…",
             "lines": [
-              "The garden ached, and you listened.",
-              "But… there are aches within me, too. I fear they won’t be so simple to quell."
+              "Just a squirrel? How do you mean?",
+              "And its name is… Walnut?",
+              "No, no, that can’t be right…",
+              "I’m not sure what Clay told you, but it’s clear he doesn’t understand the true nature of this fuzzy fiend!"
             ],
-            "branches": [],
-            "triggersTOF": true
+            "branches": []
           }
         ]
       }
@@ -107,41 +130,72 @@
       "conversationName": "After TOF Completion",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Visit Clay After TOF",
+        "optionName": "Talk after TOF",
         "lines": [
-          "You have eased a tremor in this old heart.",
-          "I may yet thrive alongside the garden. Come. Let us return to it."
+          "I don’t understand. Your words—they conjure such a strange feeling in me.",
+          "As if my heart is lighter…",
+          "Who knew words could carry such magic? Fascinating!",
+          "I will have to study this further.",
+          "Thank you, my wonderful apprentice.",
+          "And Walnut… I apologise if I ever scared you. Would you… Would you care for a biscuit?"
         ],
         "branches": []
       }
     },
     {
       "conversationId": 8,
-      "conversationName": "Filbert’s Quest - Squirrel",
+      "conversationName": "Your Past Dialogue",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Ask about Walnut",
+        "optionName": "Ask about your past",
         "lines": [
-          "I see you’ve met Walnut. Filbert’s been spinning his stories again, hasn’t he?",
-          "There is no evil here. Just a squirrel, and a lonely frog who sees more than he says.",
-          "Walnut’s been my friend for years. He speaks to me. Filbert has tried to warn me about him seven times. Once with a pie chart.",
-          "But I think… maybe Filbert isn’t afraid of Walnut. Maybe he’s afraid Walnut doesn’t like him.",
-          "Go on, then. Bring him to Filbert. He’s told me that it’s okay. He suspects that Filbert needs a friend."
+          "You know… I can’t recall a time I wasn’t alone.",
+          "From the moment I hatched, it was just me, my cave, and my magic.",
+          "But now… there’s you. You talked to me. You listened. You treated me with respect.",
+          "Friendship… it’s a magical thing, isn’t it?",
+          "And not only that—you introduced me to Walnut! He’s such a funny little fellow.",
+          "I believe the term for that is… a ‘two-for-one deal.’ Baha!"
         ],
         "branches": []
       }
     },
     {
       "conversationId": 9,
+      "conversationName": "Orb Interaction (Alastair Quest)",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the Orb",
+        "lines": [
+          "WAAH! Mind your paws, bedlamite!",
+          "You do know that fiddling with the orb is a dangerous game, yes?",
+          "Its power is great, but also grumpy.",
+          "What do you want it for, anyway? Hm? Glitter, you say?",
+          "You wish to restore the shimmer of a unicorn’s mane? Bah! Nonsense.",
+          "Even this orb draws the line at vanity.",
+          "Listen well: as unicorns age, their manes lose their sparkle—like stardust drifting off into space.",
+          "It's not a curse. It’s nature’s way of saying, ‘You’ve glowed long enough, buddy.’",
+          "And aging, dear meddler… is something even the most powerful wizards do not touch.",
+          "Not unless they want their eyebrows to swap places with their kneecaps."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 10,
       "conversationName": "Quest Complete Greeting",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Greet Clay (Quest Complete)",
+        "optionName": "Greet Filbert (Quest Complete)",
         "lines": [
-          "Greetings, friend. The soil sings in your presence."
+          "Ah, it’s you! My friend! My ally!",
+          "Your musk brings great comfort!",
+          "I daresay things are looking sideways. Or is it… upwards?",
+          "Well, you know what I mean."
         ],
         "branches": []
       }
     }
   ]
 }
+
+

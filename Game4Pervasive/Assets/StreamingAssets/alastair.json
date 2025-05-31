@@ -4,7 +4,7 @@
   "approvalPoints": 1,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
-  "availableQuests": ["Restore the Sparkle"],
+  "availableQuests": [],
   "conversations": [
     {
       "conversationId": 1,
@@ -49,7 +49,18 @@
           "Say—if you happened to find something that could restore the glitter of my mane, even a little…",
           "I daresay I could sing again. And for you, of course, I’d reserve a front row seat!"
         ],
+        "branches": [{
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Fans",
+        "lines": [
+          "The roar of the crowd is a bewitching thing, my dear fan.",
+          "The cheers, the standing ovations, the roses tossed at my hooves—well… one rose. Once. Slightly wilted. Still!",
+          "Those were days of glory. Now I sing only for shadows, and those crowds cheer solely in my memory.",
+          "But you… You are here. You listen. You nod, even if only to humour me.",
+          "That makes you a true fan—even if you’ve not said so. And that, dear one… means more than you know."
+        ],
         "branches": []
+      }]
       }
     },
     {
@@ -105,8 +116,7 @@
               "I… I don’t believe I am.",
               "What am I to do?"
             ],
-            "branches": [],
-            "triggersTOF": true
+            "branches": []
           }
         ]
       }

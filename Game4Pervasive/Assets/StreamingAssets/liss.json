@@ -17,7 +17,30 @@
           "Name’s Liss. Me does the fixins and the hammersies.",
           "No touchings. Ain’t got time to reattach fingies."
         ],
+        "branches": [{
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Smithing",
+        "lines": [
+          "Smithin’s in me bloodses. Me grandpappy been swingin’ hammersies since ’fore Pebblewick had street signs.",
+          "Same with me ma. And her ma. So now it’s me. And me’s pretty damn good at it, if me says so meself.",
+          "It’s okay work, me supposes. Loud. Hot. Strong. But never been what gets me tickin’, y’know?",
+          "Still, me sticks with it. You don’t say no to me family. Not if you likes keepin’ your teethses.",
+          "Speakings of hot thingses… That Tia. She got a way with fire.",
+          "Me was thinkin’ of makin’ somethin’ for her. Nothin’ big. Just somethin’ nice.",
+          "But me don’t know what she likeses. You could… maybe… ask ’round, yeah? See what sparkses her fancy?"
+        ],
         "branches": []
+      }, {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about your voice",
+        "lines": [
+          "Eh? Somethin’ wrong with how me talkses?",
+          "This me normal voice. Got passed down like me anvil.",
+          "All mousefolk talk like this, they does. Grandpappy used to say, ‘Big wordses for cowards an’ showoffs.’",
+          "Me talks how me was raised. Besides—me words get the job done. You understoods me, didn’t ya?"
+        ],
+        "branches": []
+      }]
       }
     },
     {

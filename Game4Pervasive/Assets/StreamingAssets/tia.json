@@ -1,39 +1,164 @@
 {
-  "characterId": 1,
+  "characterId": 7,
   "characterName": "Tia",
-  "approvalPoints": 3,
+  "approvalPoints": 0,
   "maxApprovalPoints": 10,
   "readyForTOF": true,
   "availableQuests": [],
   "conversations": [
     {
       "conversationId": 1,
-      "conversationName": "First Encounter",
+      "conversationName": "Introduction",
       "conversationTree": {
         "dialogueNodeId": 0,
-        "optionName": "Greet Tia",
+        "optionName": "Meet Tia",
         "lines": [
-          "Who dares enter my cave?",
-          "Oh… a traveler? You don’t look like much."
+          "You must be the new resident. Well met, stranger.",
+          "Just as a flame needs fresh kindling, a little town like this can always use more good folk.",
+          "I am Tia. Some call me the Great Firedrake. Mostly it is I who calls myself this.",
+          "I come from the mountains. Like you, I have not been in Pebblewick long.",
+          "Let us make new lives here together, hm? At the edge of the world."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 2,
+      "conversationName": "Quest Incomplete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Tia Again",
+        "lines": [
+          "You return. I see words smouldering behind your eyes.",
+          "Speak, and let them rise."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 3,
+      "conversationName": "Great Firedrake Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about 'Great Firedrake'",
+        "lines": [
+          "I am proud to bear such a title. Hardly can I recall a time when fire did not fascinate me.",
+          "Such a diverse wonder, wouldn’t you agree? Fire is not just destruction. It is life. Rebirth. Passion.",
+          "Yet, all too many fear it. Yes, it can be a dangerous thing… but when treated with care, it is the most beautiful force of our world.",
+          "I once saw fire dancers spin flame like ribbon in the air. Oh, you should’ve seen them. That memory still glows within me.",
+          "That reminds me… Lately, I’ve been yearning to kindle something of my own.",
+          "If you find any kindling about, do let me know. I feel a new fire stirring, and it needs a spark."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 4,
+      "conversationName": "Old Life Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about her old life",
+        "lines": [
+          "I once lived atop the highest crags, where clouds roamed and stars hung just above my horns.",
+          "I shared that sky with another dragon—Shen. Oh, how he adored the stars… Called them “sky-flames”.",
+          "It was Shen who taught me that fire could be more than heat and ruin. He gave it poetry."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 5,
+      "conversationName": "Pebblewick Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Pebblewick",
+        "lines": [
+          "This is a good town. Sheltered. Warm. Not like the mountains—but good.",
+          "I do not know the people well, but they have been kind.",
+          "That Liss—she’s something special, isn’t she?",
+          "I watch her work the forge sometimes. Rarely have I seen anyone wield fire with such strength… and such care."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 6,
+      "conversationName": "Kindling Returned",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Give Tia the kindling",
+        "lines": [
+          "Ah, this will do perfectly! Thank you very much."
         ],
         "branches": [
           {
             "dialogueNodeId": 1,
-            "optionName": "Be polite",
+            "optionName": "What's the kindling for?",
             "lines": [
-              "Ok bye bye"
+              "I wish I could tell you… but some fires are hard to name, and harder still to face.",
+              "I’m not sure I have the strength to light this one."
             ],
-            "branches": []
-          },
-          {
-            "dialogueNodeId": 2,
-            "optionName": "Boast",
-            "lines": [
-              "*eats you*"
-            ],
-            "branches": []
+            "branches": [],
+            "triggersTOF": true
           }
         ]
+      }
+    },
+    {
+      "conversationId": 7,
+      "conversationName": "After Completing TOF",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Light the fire",
+        "lines": [
+          "Very well, stranger. Or should I say… friend.",
+          "Stand with me now, as I light this fire. For Shen."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 8,
+      "conversationName": "Shen Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Shen",
+        "lines": [
+          "Shen was my truest friend.",
+          "For a hundred years, we soared, laughed, lazed…",
+          "At night, we would lie on the cliff’s edge and name every sky-flame that we could see.",
+          "Then, one day, his fire went out. Not even the stars felt warm after that.",
+          "I miss him more than anything."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 9,
+      "conversationName": "Star Map (Liss Quest)",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the star map",
+        "lines": [
+          "Ah… I wondered where I left that.",
+          "This map’s been with me a long time. Shen and his stars… ‘Sky-flames,’ he called them—sparks of stories drifting in the dark.",
+          "We’d lie on the cliff edge and name them one by one. Then we’d draw them here, by claw and coal…",
+          "Please, keep looking, if you’d like."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 10,
+      "conversationName": "Quest Complete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Tia (Quest Complete)",
+        "lines": [
+          "Greetings, good friend.",
+          "Pebblewick glows brighter in your warmth."
+        ],
+        "branches": []
       }
     }
   ]

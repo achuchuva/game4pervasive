@@ -4,7 +4,7 @@
   "approvalPoints": 2,
   "maxApprovalPoints": 10,
   "readyForTOF": false,
-  "availableQuests": ["Mend the Brew"],
+  "availableQuests": [],
   "conversations": [
     {
       "conversationId": 1,
