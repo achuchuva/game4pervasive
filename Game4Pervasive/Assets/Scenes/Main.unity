@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Filbery
+  m_text: Filbert
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
   m_sharedMaterial: {fileID: 3317225984504593934, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
@@ -6353,9 +6353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 2099873010}
-  RotationSpeed: 1
+  RotationSpeed: 20
   Preset: {fileID: 11400000, guid: e22bff37b5bd34a4fa8cc5cab29690f8, type: 2}
-  TimeOfDay: 9
+  TimeOfDay: 8
 --- !u!1 &839856752
 GameObject:
   m_ObjectHideFlags: 0
@@ -8703,7 +8703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2e066adc9eee943b65591ef639f765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 2
   groundDist: 0.432
   terrainLayer:
     serializedVersion: 2

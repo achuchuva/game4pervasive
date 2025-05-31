@@ -2165,9 +2165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 1358818465}
-  RotationSpeed: 1
+  RotationSpeed: 20
   Preset: {fileID: 11400000, guid: e22bff37b5bd34a4fa8cc5cab29690f8, type: 2}
-  TimeOfDay: 9
+  TimeOfDay: 8
 --- !u!1 &1720308828
 GameObject:
   m_ObjectHideFlags: 0

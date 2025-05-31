@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.UI;
-using UnityEditor.SearchService;
 
 public class Dialogue : MonoBehaviour
 {
