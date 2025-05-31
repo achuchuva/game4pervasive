@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0677c10262dc63e409ab1a6ac6db6eaa, type: 3}
+  m_Name: LissTOF
+  m_EditorClassIdentifier: 
+  characterName: Liss
+  doubts:
+  - doubtId: 0
+    doubtText: "Me family always says\u2026 work\u2019s gotta be loud. Hot. Heavy.
+      Bangin\u2019 metal and fixin\u2019 hinges\u2014that\u2019s real work, they
+      says. But thread? Stitchin\u2019? Feels like playin\u2019 pretend. What if
+      they was right? What if it ain\u2019t worth nothin\u2019?"
+    options:
+    - optionId: 0
+      option: Forget your family.
+      itemsRequired: []
+    - optionId: 1
+      option: It can be a hobby.
+      itemsRequired: []
+    - optionId: 2
+      option: Real work comes from the heart.
+      itemsRequired: []
+    correctOptionId: 2
+    doubtSuccessResponse: "From heartses\u2026 Hmph. Feels harder than hammerin\u2019,
+      that\u2019s for sure."
+    doubtFailureResponse: ...
+  - doubtId: 1
+    doubtText: "You don\u2019t understands. If me family knew\u2026 they\u2019d laugh.
+      Call me soft. Say me wasted all me trainin\u2019, messin\u2019 with threadses.
+      Might never forgives me for bein\u2019 like this\u2026"
+    options:
+    - optionId: 0
+      option: You have to put yourself first.
+      itemsRequired: []
+    - optionId: 1
+      option: Allow yourself to be yourself
+      itemsRequired: []
+    - optionId: 2
+      option: You might have to hide it.
+      itemsRequired: []
+    correctOptionId: 1
+    doubtSuccessResponse: "Meself\u2026 You\u2019re right. Me don\u2019t thinks me
+      could hide it forever\u2026 Maybe me just needs to get it done with."
+    doubtFailureResponse: ...
+  - doubtId: 2
+    doubtText: "But what if\u2026 what if me makes it, and she don\u2019t care? What
+      if Tia looks at it and sees just\u2026 stupid ol\u2019 stringses? What if it\u2019s
+      not enough?"
+    options:
+    - optionId: 0
+      option: It will matter because you made it.
+      itemsRequired: []
+    - optionId: 1
+      option: Then wait until you're ready.
+      itemsRequired: []
+    - optionId: 2
+      option: Refection is a part of life
+      itemsRequired: []
+    correctOptionId: 0
+    doubtSuccessResponse: "Hmm\u2026 So it\u2019s the heartses you put into it, not
+      just the stitchin\u2019... You reckon she\u2019ll see that?\u2026 Yeah. Maybe
+      she wills."
+    doubtFailureResponse: ...

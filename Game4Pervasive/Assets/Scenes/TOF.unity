@@ -1214,7 +1214,7 @@ GameObject:
   - component: {fileID: 1212503445}
   - component: {fileID: 1212503444}
   m_Layer: 0
-  m_Name: Tia
+  m_Name: Liss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1336,10 +1336,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tofs:
-  - name: Tia
-    data: {fileID: 11400000, guid: f2285d67985e8a5499859f7a470e5b9d, type: 2}
+  - name: Liss
+    data: {fileID: 11400000, guid: 1bcd9191a72e57b4381f77a152d3c659, type: 2}
   - name: Filbert
-    data: {fileID: 11400000, guid: 728b1ef93f7fe9c498fd84f8769f1782, type: 2}
+    data: {fileID: 11400000, guid: 09ad953798d9315408736bc94dbd0a77, type: 2}
 --- !u!1001 &1299569232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2304,9 +2304,9 @@ MonoBehaviour:
   m_fontSize: 18
   m_fontSizeBase: 18
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 12
+  m_fontSizeMax: 24
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -2830,9 +2830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tof: {fileID: 1254956276}
   tofCharacters:
-  - characterName: Tia
+  - characterName: Liss
     character: {fileID: 1212503443}
-  - characterName: Clay
+  - characterName: Filbert
     character: {fileID: 1913648979}
   dialogueText: {fileID: 1811080243}
   characterText: {fileID: 963301530}
@@ -2855,7 +2855,7 @@ GameObject:
   - component: {fileID: 1913648980}
   - component: {fileID: 1913648981}
   m_Layer: 0
-  m_Name: Clay
+  m_Name: Filbert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

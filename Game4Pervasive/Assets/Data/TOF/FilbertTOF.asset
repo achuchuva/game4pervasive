@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0677c10262dc63e409ab1a6ac6db6eaa, type: 3}
+  m_Name: FilbertTOF
+  m_EditorClassIdentifier: 
+  characterName: Filbert
+  doubts:
+  - doubtId: 0
+    doubtText: "That thing is evil, I\u2019m telling you! Look into the searing crimson
+      of its eyes! Look at its razor-sharp claws! Look at its bushy tail\u2026"
+    options:
+    - optionId: 0
+      option: Gosh... Maybe you're right!
+      itemsRequired: []
+    - optionId: 1
+      option: "It\u2019s not evil, you\u2019re just delusional."
+      itemsRequired: []
+    - optionId: 2
+      option: "He\u2019s just a squirrel, and his name is Walnut."
+      itemsRequired: []
+    correctOptionId: 2
+    doubtSuccessResponse: "Walnut\u2026 Okay. Okay, fine! Maybe he\u2019s not a demon\u2026
+      Maybe it\u2019s just a squirrel."
+    doubtFailureResponse: ...
+  - doubtId: 2
+    doubtText: "I\u2026 I wasn\u2019t really going to trap him in a jar, you know.
+      I just wanted to meet him. Ask a few questions. Offer him a biscuit. But so
+      many thoughts tumbled through my mind, and eventually\u2026. I began to fear
+      him. I was plagued with questions. What if he doesn\u2019t like me? What if
+      I scare him? What if I embarrass myself?"
+    options:
+    - optionId: 0
+      option: "He doesn\u2019t have to like you."
+      itemsRequired: []
+    - optionId: 1
+      option: "It\u2019s only a squirrel, Filbert."
+      itemsRequired: []
+    - optionId: 2
+      option: He came with me willingly. He wanted to meet you.
+      itemsRequired: []
+    correctOptionId: 2
+    doubtSuccessResponse: "He did? How surprising\u2026 That must mean something.
+      Perhaps he\u2019s curious by nature, as I am."
+    doubtFailureResponse: ...
+  - doubtId: 2
+    doubtText: "I don\u2019t know why I act this way. Am I so bizarre? Have I spent
+      so much time alone that I\u2019m physically incapable of mingling with others?
+      Am I just a joke?"
+    options:
+    - optionId: 0
+      option: "You\u2019re not a joke. You\u2019re brilliant."
+      itemsRequired: []
+    - optionId: 1
+      option: You do say weird stuff...
+      itemsRequired: []
+    - optionId: 2
+      option: Being funny is a good thing.
+      itemsRequired: []
+    correctOptionId: 0
+    doubtSuccessResponse: "Brilliant\u2026 No one\u2019s said that in a long time.
+      I always hoped someone might mean it."
+    doubtFailureResponse: ...
