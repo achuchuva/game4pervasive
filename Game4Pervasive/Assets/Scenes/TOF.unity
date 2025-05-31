@@ -1338,7 +1338,7 @@ MonoBehaviour:
   tofs:
   - name: Tia
     data: {fileID: 11400000, guid: f2285d67985e8a5499859f7a470e5b9d, type: 2}
-  - name: Clay
+  - name: Filbert
     data: {fileID: 11400000, guid: 728b1ef93f7fe9c498fd84f8769f1782, type: 2}
 --- !u!1001 &1299569232
 PrefabInstance:
