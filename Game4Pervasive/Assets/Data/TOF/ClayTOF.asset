@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0677c10262dc63e409ab1a6ac6db6eaa, type: 3}
+  m_Name: ClayTOF
+  m_EditorClassIdentifier: 
+  characterName: Clay
+  doubts:
+  - doubtId: 0
+    doubtText: I remember when these hills were wild. Untouched. Now I barely recognize
+      the roots beneath my feet. Have I lingered too long in a world that no longer
+      needs me?
+    options:
+    - optionId: 0
+      option: You could always leave.
+      itemsRequired: []
+    - optionId: 1
+      option: You helped shape this world.
+      itemsRequired: []
+    - optionId: 2
+      option: You've done enough.
+      itemsRequired: []
+    correctOptionId: 1
+    doubtSuccessResponse: "I shaped it\u2026 and I was shaped by it. That is true.
+      Perhaps my story still grows, even if it\u2019s no longer the same soil."
+    doubtFailureResponse: ...
+  - doubtId: 1
+    doubtText: "The garden calls to me, but not in words I understand. Magic\u2026
+      Alchemy\u2026 What place do I have in tending something I cannot know?"
+    options:
+    - optionId: 0
+      option: Trust the ones who can understand it
+      itemsRequired: []
+    - optionId: 1
+      option: Alchemy is just weeds with glitter.
+      itemsRequired: []
+    - optionId: 2
+      option: Step back. Let it be.
+      itemsRequired: []
+    correctOptionId: 0
+    doubtSuccessResponse: "To trust another\u2019s hands, even when I cannot feel
+      what they feel. That takes more than patience. That takes faith. But perhaps
+      I am capable."
+    doubtFailureResponse: ...
+  - doubtId: 2
+    doubtText: "I have seen countless cycles\u2014growth, decay, rebirth. Yet I never
+      change. What if I am not part of life\u2019s circle, but just its stone border?"
+    options:
+    - optionId: 0
+      option: Even stone can bloom moss.
+      itemsRequired: []
+    - optionId: 1
+      option: In time, you will change.
+      itemsRequired: []
+    - optionId: 2
+      option: You were never part of the circle.
+      itemsRequired: []
+    correctOptionId: 0
+    doubtSuccessResponse: "Moss\u2026 Yes. Quiet life upon unmoving rock. I had forgotten.
+      Perhaps I do change\u2014just more slowly than most."
+    doubtFailureResponse: ...

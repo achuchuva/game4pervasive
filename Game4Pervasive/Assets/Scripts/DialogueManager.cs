@@ -29,31 +29,15 @@ public class DialogueManager : MonoBehaviour
         dialogue.titleImage.gameObject.SetActive(true);
         dialogue.titleText.text = character.characterName;
         isDialogueActive = true;
-        dialogue.StartDialogue(currentConversation.conversationTree);
-
-        // grant quest if they have it
-        if (character.availableQuests != null && character.availableQuests.Length > 0)
+        if (character.readyForTOF)
         {
-            Debug.Log("Character has available quests, granting the first one.");
-
-            // convert to list
-            List<QuestData> questList = new List<QuestData>(character.availableQuests);
-
-            // print all quests
-            foreach (QuestData quest in questList)
-            {
-                Debug.Log("Available quest: " + quest.questTitle);
-            }
-
-            QuestData quest2 = character.availableQuests[0];
-
-            Debug.Log("Granting quest: " + quest2.questTitle);
-
-            QuestManager.Instance.activeQuests.Add(quest2);
-
-            // remove quest from npc
-            character.availableQuests = new QuestData[0];
+            dialogue.TOFCharacter = character.characterName;
         }
+        else
+        {
+            dialogue.TOFCharacter = string.Empty; // no TOF character for non-TOF dialogues
+        }
+        dialogue.StartDialogue(currentConversation.conversationTree);
     }
 
     public void FindItem(ItemData item)
@@ -88,6 +72,7 @@ public class DialogueManager : MonoBehaviour
 
         DialogueNode tree = new DialogueNode(ITEM_CONVERSATION_ID, "Item Found", lines, branches);
 
+        dialogue.TOFCharacter = string.Empty; // no TOF character for items
         dialogue.StartDialogue(tree);
     }
 }

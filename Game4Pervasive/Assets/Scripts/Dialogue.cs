@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.InputSystem;
 using TMPro;
 using UnityEngine.UI;
+using UnityEditor.SearchService;
 
 public class Dialogue : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Dialogue : MonoBehaviour
     private string[] lines;
 
     public InputActionReference nextLine;
+    [HideInInspector] public string TOFCharacter = string.Empty; // used to determine if this is a TOF dialogue or not
 
     // current node
     public DialogueNode currentNode;
@@ -110,6 +112,12 @@ public class Dialogue : MonoBehaviour
         lines = null;
         gameObject.SetActive(false);
         options.SetActive(false);
+
+        if (TOFCharacter != string.Empty)
+        {
+            SceneFadeManager.CurrentCharacterTOF = TOFCharacter;
+            SceneFadeManager.Instance.LoadScene("TOF");
+        }
     }
 
     public void StartDialogue(DialogueNode dialogueRootNode)

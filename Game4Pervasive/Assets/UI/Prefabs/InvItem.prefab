@@ -142,8 +142,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Ice Rocks
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
+  m_sharedMaterial: {fileID: 3317225984504593934, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

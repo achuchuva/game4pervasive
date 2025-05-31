@@ -4,7 +4,7 @@ using TMPro;
 using System;
 using System.Collections;
 using UnityEngine.InputSystem;
-using System.Threading.Tasks.Sources;
+using UnityEditor.SearchService;
 
 public class TOFManager : MonoBehaviour
 {
@@ -25,10 +25,11 @@ public class TOFManager : MonoBehaviour
     public TMP_Text characterText;
     public Transform optionsContainer;
     public GameObject optionButtonPrefab;
-    public Slider approvalRatingSlider;
+    public GameObject heartContainer;
+    public GameObject heartPrefab;
 
     private int currentDoubtIndex = 0;
-    private int approvalRating = 1;
+    private int approvalRating = 3;
     private string currentDialogueText = string.Empty;
     private bool awaitingPlayerInputAfterResponse = false;
 
@@ -38,11 +39,11 @@ public class TOFManager : MonoBehaviour
 
     void Start()
     {
-        tofData = Array.Find(tof.tofs, (t) => t.name == "Tia").data; // hardcoded for Tia TOF
+        tofData = Array.Find(tof.tofs, (t) => t.name == SceneFadeManager.CurrentCharacterTOF).data;
         characterText.text = tofData.characterName;
         TOFCharacter character = Array.Find(tofCharacters, (c) => c.characterName == tofData.characterName);
         character.character.SetActive(true);
-        DisplayCurrentDoubt();
+        Invoke("DisplayCurrentDoubt", 2f);
         UpdateApprovalRating();
     }
 
@@ -73,7 +74,7 @@ public class TOFManager : MonoBehaviour
     {
         if (currentDoubtIndex >= tofData.doubts.Length)
         {
-            TypeDialogueText("Fin", null);
+            SceneFadeManager.Instance.LoadScene("Main");
             return;
         }
 
@@ -168,7 +169,18 @@ public class TOFManager : MonoBehaviour
 
     void UpdateApprovalRating()
     {
-        approvalRatingSlider.value = approvalRating;
+        // Clear existing hearts
+        foreach (Transform child in heartContainer.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Create new hearts based on approval rating
+        for (int i = 0; i < approvalRating; i++)
+        {
+            var heartGO = Instantiate(heartPrefab, heartContainer.transform);
+            heartGO.SetActive(true);
+        }
     }
 
     void ClearOptions()

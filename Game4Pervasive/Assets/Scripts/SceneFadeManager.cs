@@ -6,6 +6,7 @@ using System.Collections;
 public class SceneFadeManager : MonoBehaviour
 {
     public static SceneFadeManager Instance;
+    public static string CurrentCharacterTOF = "Tia"; // Default TOF character, can be changed
 
     [Header("Fade Settings")]
     public Image fadeImage; // Assign in inspector
