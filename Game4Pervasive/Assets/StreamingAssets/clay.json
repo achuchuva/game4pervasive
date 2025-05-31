@@ -1,0 +1,145 @@
+{
+  "characterId": 2,
+  "characterName": "Clay",
+  "approvalPoints": 0,
+  "maxApprovalPoints": 10,
+  "readyForTOF": false,
+  "availableQuests": ["Garden Restoration"],
+  "conversations": [
+    {
+      "conversationId": 1,
+      "conversationName": "Introduction",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Meet Clay",
+        "lines": [
+          "Ah… your footsteps are unknown to this soil. Welcome, outsider. I am Clay, caretaker of all life here in Pebblewick. Long have I tended to these lands, before even the gardens withered. May you find something here worth nurturing."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 2,
+      "conversationName": "Quest Incomplete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Clay Again",
+        "lines": [
+          "You’ve come. Good. Silence can be its own conversation, but to hear a voice again is always appreciated."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 3,
+      "conversationName": "Garden Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the Gardens",
+        "lines": [
+          "There was a time when gardens bloomed in every corner of Pebblewick. The townsfolk would gather, sharing seeds and stories.",
+          "The gardens are gone now—replaced by roofs, fences, homes. But one garden remains. Overgrown, derelict. The earth beneath it still hums with memory.",
+          "I wish to nurture it back to health, but do not know how. The garden pulses with magic and alchemy—things unknown to me.",
+          "Please, if you can, learn more of this garden. Help me to understand what pains it."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 4,
+      "conversationName": "Soil Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Soil",
+        "lines": [
+          "Soil is not just dirt. It is memory. Every fallen leaf, every footstep pressed into mud—it all becomes part of the story.",
+          "When I press my hand to the ground, I can feel those stories ripple through me.",
+          "Most are oblivious to it… but I hear lullabies in loam. Warnings in wilted petals. Joy in the rise of green things.",
+          "The world speaks—all one must do is listen."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 5,
+      "conversationName": "Pebblewick Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Pebblewick",
+        "lines": [
+          "I have wandered these hills longer than Pebblewick has had a name.",
+          "Before stone turned to chimney and the ground was paved, I tended roots and made quiet friends of rabbits.",
+          "The people came later, but I stayed. I watched the town grow, settle, change.",
+          "Sometimes I miss the wild it once was… but I do not resent the change. All things shift, and still, the earth holds steady beneath it all."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 6,
+      "conversationName": "Post-Garden Pixie",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Report on Garden Pixie",
+        "lines": [
+          "Something feels… lighter. Whatever you did, you have soothed the earth here.",
+          "Now, the garden can flourish once again. Thank you, friend.",
+          "I only hope that I can do the same…"
+        ],
+        "branches": [
+          {
+            "dialogueNodeId": 1,
+            "optionName": "What's wrong?",
+            "lines": [
+              "The garden ached, and you listened.",
+              "But… there are aches within me, too. I fear they won’t be so simple to quell."
+            ],
+            "branches": [],
+            "triggersTOF": true
+          }
+        ]
+      }
+    },
+    {
+      "conversationId": 7,
+      "conversationName": "After TOF Completion",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Visit Clay After TOF",
+        "lines": [
+          "You have eased a tremor in this old heart.",
+          "I may yet thrive alongside the garden. Come. Let us return to it."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 8,
+      "conversationName": "Filbert’s Quest - Squirrel",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Walnut",
+        "lines": [
+          "I see you’ve met Walnut. Filbert’s been spinning his stories again, hasn’t he?",
+          "There is no evil here. Just a squirrel, and a lonely frog who sees more than he says.",
+          "Walnut’s been my friend for years. He speaks to me. Filbert has tried to warn me about him seven times. Once with a pie chart.",
+          "But I think… maybe Filbert isn’t afraid of Walnut. Maybe he’s afraid Walnut doesn’t like him.",
+          "Go on, then. Bring him to Filbert. He’s told me that it’s okay. He suspects that Filbert needs a friend."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 9,
+      "conversationName": "Quest Complete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Clay (Quest Complete)",
+        "lines": [
+          "Greetings, friend. The soil sings in your presence."
+        ],
+        "branches": []
+      }
+    }
+  ]
+}

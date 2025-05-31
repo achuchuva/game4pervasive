@@ -1,0 +1,192 @@
+{
+  "characterId": 6,
+  "characterName": "Liss",
+  "approvalPoints": 0,
+  "maxApprovalPoints": 10,
+  "readyForTOF": false,
+  "availableQuests": ["What Sparks Her Fancy"],
+  "conversations": [
+    {
+      "conversationId": 1,
+      "conversationName": "Introduction",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Meet Liss",
+        "lines": [
+          "Ah, youse must be the new kid on the block.",
+          "Name’s Liss. Me does the fixins and the hammersies.",
+          "No touchings. Ain’t got time to reattach fingies."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 2,
+      "conversationName": "Quest Incomplete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Liss Again",
+        "lines": [
+          "Oh. Youse again.",
+          "Somethin’ broke, or are youse just feeling the boredoms?"
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 3,
+      "conversationName": "Smithing Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Smithing",
+        "lines": [
+          "Smithin’s in me bloodses. Me grandpappy been swingin’ hammersies since ’fore Pebblewick had street signs.",
+          "Same with me ma. And her ma. So now it’s me. And me’s pretty damn good at it, if me says so meself.",
+          "It’s okay work, me supposes. Loud. Hot. Strong. But never been what gets me tickin’, y’know?",
+          "Still, me sticks with it. You don’t say no to me family. Not if you likes keepin’ your teethses.",
+          "Speakings of hot thingses… That Tia. She got a way with fire.",
+          "Me was thinkin’ of makin’ somethin’ for her. Nothin’ big. Just somethin’ nice.",
+          "But me don’t know what she likeses. You could… maybe… ask ’round, yeah? See what sparkses her fancy?"
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 4,
+      "conversationName": "Your Voice Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about your voice",
+        "lines": [
+          "Eh? Somethin’ wrong with how me talkses?",
+          "This me normal voice. Got passed down like me anvil.",
+          "All mousefolk talk like this, they does. Grandpappy used to say, ‘Big wordses for cowards an’ showoffs.’",
+          "Me talks how me was raised. Besides—me words get the job done. You understoods me, didn’t ya?"
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 5,
+      "conversationName": "Pebblewick Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Pebblewick",
+        "lines": [
+          "Pebblewick’s been me home me whole life. Same for me ma. And her ma.",
+          "The air here’s good for metal—holds the heatses just right.",
+          "Folks here? Hm. You got Clay, who don’t say much… and Filbert, who says way too much.",
+          "But mosts are good people. It’s a place worth makin’ things for."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 6,
+      "conversationName": "Interacting with Kindling (Tia Quest)",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about wood bits",
+        "lines": [
+          "You want them wood bits? Go ahead. They’s just leftover stuffs."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 7,
+      "conversationName": "Returned from Tia",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Report back about Tia",
+        "lines": [
+          "A star map, huh? Yeah… me’s heard her speak of Shen before.",
+          "Quiet-like. Soft voice. Real sad, like she’s holdin’ fire in her belly but don’t wanna burn no one.",
+          "But me didn’t knows ’bout the starses. Sky-flames… A nice word, that is.",
+          "Me thinks… me knows what to makes now. Somethin’ quiet. Somethin’ gentle.",
+          "But… Me don’t knows if me can do it…"
+        ],
+        "branches": [
+          {
+            "dialogueNodeId": 1,
+            "optionName": "What will you make?",
+            "lines": [
+              "Me was thinkin’ of… embroiderin’ somethin’. Don’t tells no one, yeah?",
+              "But… me loves the art of the thread. It’s soft. Quiet. Me hands get real still when me does it.",
+              "But if me family knew… Me dreads to imagineses. They’d say it ain’t proper work. Ain’t strong. Ain’t worth nothin’.",
+              "That’s why… that’s why me don’t knows if me can do it.",
+              "Me don’t thinks… Me can brings meself…"
+            ],
+            "branches": [],
+            "triggersTOF": true
+          }
+        ]
+      }
+    },
+    {
+      "conversationId": 8,
+      "conversationName": "After Completing TOF",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Talk after TOF",
+        "lines": [
+          "All rights… You got through to me.",
+          "Me’s gonna make this gift so stunnin’, Tia won’t knows what hit her!",
+          "Thankses to you, friend… truly."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 9,
+      "conversationName": "Tia Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Tia",
+        "lines": [
+          "Tia’s… somethin’ else, ain’t she?",
+          "All calm and clever—like a fire that don’t burn, just warmses you.",
+          "Me’s been watchin’ her for a while now. Didn’t thinks me had a shot—figured she’d laugh if she knew.",
+          "But… you helped work up the nerveses, helped me say what me couldn’t say with wordses.",
+          "Maybe… maybe she sees me, too.",
+          "Me hopes she does."
+        ],
+        "branches": [],
+        "requiresTOF": true
+      }
+    },
+    {
+      "conversationId": 10,
+      "conversationName": "Scroll Pile (Pippa Quest)",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the scrolls",
+        "lines": [
+          "Huh? Lookin’ for Pip’s recipe, are ya?",
+          "Oh, whiskers... Yeah, it’s in theres.",
+          "But she don’t gets it back. She tormented me family, she did. Terrible prankses. For years.",
+          "We was already strugglin’, and she made it worse.",
+          "I know she was just a little goblin back then, but still—she never said sorries.",
+          "Never even told you what she did, did she?",
+          "Look… If she comes ’round and apologises proper, maybe—maybe—me thinks on givin’ it back."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 11,
+      "conversationName": "Quest Complete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Liss (Quest Complete)",
+        "lines": [
+          "Oh, it’s you!",
+          "Me likes when it’s you.",
+          "Don’t tell nobody, but… me thinks you’re alright.",
+          "Me made somethin’ real, thanks to you. Real as heartses."
+        ],
+        "branches": []
+      }
+    }
+  ]
+}

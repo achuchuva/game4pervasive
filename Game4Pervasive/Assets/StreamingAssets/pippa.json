@@ -1,0 +1,173 @@
+{
+  "characterId": 4,
+  "characterName": "Pippa",
+  "approvalPoints": 0,
+  "maxApprovalPoints": 10,
+  "readyForTOF": false,
+  "availableQuests": ["Mend the Brew"],
+  "conversations": [
+    {
+      "conversationId": 1,
+      "conversationName": "Introduction",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Meet Pippa",
+        "lines": [
+          "Oh. You ain’t from around here, are ya, kid?",
+          "Name’s Pippa. I’m the resident alchemist. Potions, cures, or a stiff drink—always got ‘em bottled and ready.",
+          "Say, you met Liss yet? Be wary of that little mouse. Her family’s no good, I tell ya."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 2,
+      "conversationName": "Quest Incomplete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Pippa Again",
+        "lines": [
+          "Back again, are ya?",
+          "Hmph. Well, make it quick, kiddo. I got potions that need brewin’."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 3,
+      "conversationName": "Alchemy Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Alchemy",
+        "lines": [
+          "Ah, potions! Been brewin’ ’em since I was no higher than a teakettle.",
+          "Used to make all sorts of nonsense as a wee gob—brews that’d turn your hair blue, make you hiccup poetry, or dance every time a bird chirped.",
+          "Most folks didn’t appreciate me art. Least of all Liss’s grandfather.",
+          "Sour old rat, he was. He took one of me best recipes—one I made with me own willpower and harvests—and confiscated it like I was some fussy baby.",
+          "Called me a menace. Said goblins weren’t to be trusted.",
+          "That recipe’s still with their family, far as I know. It was so long ago, I can’t even remember what it was a recipe for.",
+          "Think you could talk to Liss for me? She won’t even look me in the eye these days… Can’t blame her.",
+          "I bet her grandfather spun plenty of nasty little lies about me."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 4,
+      "conversationName": "Liss Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Liss",
+        "lines": [
+          "Good head on her shoulders, that Liss.",
+          "Shame she had to grow up in that family. Pebblewick’s had their lot on the anvil for generations.",
+          "Hammer this, forge that—never a moment for fun.",
+          "And if a little mouseling wants to do somethin’ different? Too bad.",
+          "I remember how she used to look—like she had a storm brewin’ behind those quiet eyes.",
+          "Made me wonder what she really wanted to be."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 5,
+      "conversationName": "Pebblewick Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Pebblewick",
+        "lines": [
+          "Pebblewick’s been good to me. Lived here me whole life.",
+          "Me family came in generations ago. It’s a lovely place—woods and fields just drippin’ with ingredients.",
+          "Bloodroot, twitchleaf, moonstem—they grow wild here, if you know where to look.",
+          "I keep a garden, too. The rare stuff."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 6,
+      "conversationName": "Garden Dialogue (Clay Quest)",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the garden (for Clay)",
+        "lines": [
+          "Checkin’ out me garden, are ya? For Clay?",
+          "Not the prettiest display, I’ll admit, but it’s good for growin’ ingredients.",
+          "Huh? What’s wrong with it, you ask? Nothin’, I don’t—…Wait. Hold on.",
+          "You hear that? I hear… Aha! I hear a pixie!",
+          "That’d explain it. Those pesky buggers love messin’ with crops.",
+          "Thanks for bringin’ this to me attention.",
+          "Tell Clay he doesn’t have to worry no more. I’ll send the little pest packin’."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 7,
+      "conversationName": "Returned from Liss",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Tell Pippa about Liss",
+        "lines": [
+          "Heh. I didn’t think it would work.",
+          "Was worth a shot, at least."
+        ],
+        "branches": [
+          {
+            "dialogueNodeId": 1,
+            "optionName": "Your past…",
+            "lines": [
+              "Ah… So, she told you what I was like, huh?",
+              "I guess there really is no escaping the past."
+            ],
+            "branches": [],
+            "triggersTOF": true
+          }
+        ]
+      }
+    },
+    {
+      "conversationId": 8,
+      "conversationName": "After TOF Completion",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Talk after TOF",
+        "lines": [
+          "You know… you’re awfully wise for someone so baby-faced.",
+          "You’re a good soul—helpin’ an old goblin to see the truth, even when you had no obligation to.",
+          "You’re right. I’ve gotta acknowledge who I was. Gotta make it right with Liss. Finally."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 9,
+      "conversationName": "Recipe Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the recipe",
+        "lines": [
+          "Ah. Curious about the recipe, are ya?",
+          "Turns out it was somethin’ called the “Gobblepop Elixir”.",
+          "One sip and you’ll be burping out chicken clucks for three days straight.",
+          "Absolutely useless. But hilarious."
+        ],
+        "branches": [],
+        "requiresTOF": true
+      }
+    },
+    {
+      "conversationId": 10,
+      "conversationName": "Quest Complete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Pippa (Quest Complete)",
+        "lines": [
+          "There’s somethin’ about you, kid.",
+          "Trouble—the good kind. You’ve got a goblin heart, I reckon."
+        ],
+        "branches": []
+      }
+    }
+  ]
+}

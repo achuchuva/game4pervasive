@@ -1,0 +1,156 @@
+{
+  "characterId": 3,
+  "characterName": "Alastair",
+  "approvalPoints": 0,
+  "maxApprovalPoints": 10,
+  "readyForTOF": false,
+  "availableQuests": ["Restore the Sparkle"],
+  "conversations": [
+    {
+      "conversationId": 1,
+      "conversationName": "Introduction",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Meet Alastair",
+        "lines": [
+          "Ah! A new face in the crowd! A loving fan, perhaps? How thrilling.",
+          "I am Alastair—singer of serenades, purveyor of poetry, former star of the travelling circus.",
+          "But those glittering days are… behind me now. Still, I hope Pebblewick dazzles you in its own quiet way."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 2,
+      "conversationName": "Quest Incomplete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Alastair Again",
+        "lines": [
+          "Hello again! The carousel of life keeps turning, and here you are once more.",
+          "I trust your journey is more thrilling than mine."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 3,
+      "conversationName": "Travelling Circus Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about the Travelling Circus",
+        "lines": [
+          "Ah, the circus… what a life! Silk tents and sawdust, the scent of oranges and candle smoke.",
+          "I used to sing beneath the big top as if the stars themselves were my spotlight.",
+          "The audience would hold their breath with me—and then, the applause! Like thunder!",
+          "But after years of performing… the sparkle faded. My mane, once radiant with shimmer, dulled like a cold lantern.",
+          "Without it, how could I dazzle? So I bowed—one final time—and stepped away from the stage.",
+          "Still… the call of the crowd lingers. The music stirs in me now and then.",
+          "Say—if you happened to find something that could restore the glitter of my mane, even a little…",
+          "I daresay I could sing again. And for you, of course, I’d reserve a front row seat!"
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 4,
+      "conversationName": "Fans Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Fans",
+        "lines": [
+          "The roar of the crowd is a bewitching thing, my dear fan.",
+          "The cheers, the standing ovations, the roses tossed at my hooves—well… one rose. Once. Slightly wilted. Still!",
+          "Those were days of glory. Now I sing only for shadows, and those crowds cheer solely in my memory.",
+          "But you… You are here. You listen. You nod, even if only to humour me.",
+          "That makes you a true fan—even if you’ve not said so. And that, dear one… means more than you know."
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 5,
+      "conversationName": "Pebblewick Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Ask about Pebblewick",
+        "lines": [
+          "Pebblewick is certainly quieter than the crowds I’m used to, but charming all the same.",
+          "When I came here with my circus troupe, I intended to simply pass through—but something here settled me.",
+          "The stillness, the sky, the gentle warmth of the simple homes.",
+          "And then there’s Filbert. He’s quite mad, of course, but delightfully so!",
+          "I sometimes wonder if his magic might be able to rekindle my former glow.",
+          "In truth, that may be partly why I decided to stay here. Yet I’ve not worked up the boldness to ask him.",
+          "It’s only been a year, I suppose…"
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 6,
+      "conversationName": "Returned from Filbert",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Tell Alastair about Filbert",
+        "lines": [
+          "So… there really is no way?",
+          "I thought if anyone could help me, it would be Filbert.",
+          "I’m never to glimmer again…"
+        ],
+        "branches": [
+          {
+            "dialogueNodeId": 1,
+            "optionName": "Are you okay?",
+            "lines": [
+              "I… I don’t believe I am.",
+              "What am I to do?"
+            ],
+            "branches": [],
+            "triggersTOF": true
+          }
+        ]
+      }
+    },
+    {
+      "conversationId": 7,
+      "conversationName": "After TOF Completion",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Talk after TOF",
+        "lines": [
+          "I see now… The spotlight never made me magnificent. I did that myself.",
+          "It’s decided, then! A brand-new act. Not for glitter. Not for applause.",
+          "For Pebblewick. For me! Gather around, folks!"
+        ],
+        "branches": []
+      }
+    },
+    {
+      "conversationId": 8,
+      "conversationName": "Glitterless Mane Dialogue",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Comment on his mane",
+        "lines": [
+          "This old thing? Hah! I daresay it’s taken on a certain distinguished shine—a bit of ‘silver fox,’ wouldn’t you say?",
+          "And it’s thanks to you, dear friend. Your words didn’t just lift me—they reignited me!",
+          "I may not sparkle as I once did… but I feel like a million gold pieces just the same!"
+        ],
+        "branches": [],
+        "requiresTOF": true
+      }
+    },
+    {
+      "conversationId": 9,
+      "conversationName": "Quest Complete Greeting",
+      "conversationTree": {
+        "dialogueNodeId": 0,
+        "optionName": "Greet Alastair (Quest Complete)",
+        "lines": [
+          "Hello, my most beloved fan! You never fail to leave me sparkling."
+        ],
+        "branches": []
+      }
+    }
+  ]
+}
