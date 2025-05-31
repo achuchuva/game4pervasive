@@ -28,7 +28,7 @@ public class QuestManager : MonoBehaviour
         QuestData quest1 = new QuestData
         {
             questId = 1,
-            questTitle = "Befriend Tia",
+            questTitle = "Befriend Liss",
             description = "Help the villagers find their lost cat.",
             rewards = new Reward[] { }
         };

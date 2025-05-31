@@ -5481,7 +5481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterLoader: {fileID: 216990240}
-  characterFileName: tia.json
+  characterFileName: liss.json
   bubble: {fileID: 1047654340}
   walkSpeed: 0.5
   walkRadius: 10
@@ -10129,7 +10129,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tia
+  m_text: Liss
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
   m_sharedMaterial: {fileID: 3317225984504593934, guid: 9fe64a7a1b3eaae428823d55efcf1f9c, type: 2}
